@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Java EE 7 &#187; glassfish 4.0</title>
+	<atom:link href="http://javaee7.de/tag/glassfish-4-0/feed/" rel="self" type="application/rss+xml" />
+	<link>http://javaee7.de</link>
+	<description>Informationen über die neue Java Enterprise Version</description>
+	<lastBuildDate>Fri, 13 Nov 2015 06:26:01 +0000</lastBuildDate>
+	<language>de-DE</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Finale Version von Glassfish 4.0 verwenden</title>
+		<link>http://javaee7.de/2013/09/finale-version-von-glassfish-4-0-verwenden/</link>
+		<comments>http://javaee7.de/2013/09/finale-version-von-glassfish-4-0-verwenden/#comments</comments>
+		<pubDate>Thu, 12 Sep 2013 12:42:43 +0000</pubDate>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+				<category><![CDATA[Tutorial zu Java EE 7 - Buch "Workshop Java EE 7"]]></category>
+		<category><![CDATA[glassfish]]></category>
+		<category><![CDATA[glassfish 4.0]]></category>
+		<category><![CDATA[tutorial]]></category>
+		<category><![CDATA[websocket]]></category>
+		<category><![CDATA[websockets]]></category>
+
+		<guid isPermaLink="false">http://www.javaee7.de/?p=19</guid>
+		<description><![CDATA[Als das Buch gedruckt wurde, war der Glassfish 4.0 nur in einer Vorabversion (Build 85) verfügbar &#8211; nun kann man auf der Glassfish-Seite die finale Version 4.0 (Build 89) herunterladen. Grund genug diese einmal mit unserem Projekt my-aktion-monitor zu testen. &#8230; <a href="http://javaee7.de/2013/09/finale-version-von-glassfish-4-0-verwenden/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Als das Buch gedruckt wurde, war der Glassfish 4.0 nur in einer Vorabversion (Build 85) verfügbar &#8211; nun kann man auf der <a href="http://glassfish.java.net/download.html">Glassfish-Seite</a> die finale Version 4.0 (Build 89) herunterladen.</p>
+<p>Grund genug diese einmal mit unserem Projekt <em>my-aktion-monitor</em> zu testen. </p>
+<p>Die gute Nachricht: Es funktioniert ohne Änderungen.</p>
+<p>Die Konfiguration ist nun sogar etwas einfacher: In der finalen Version des Glassfishs muss der WebSocket nicht explizit aktiviert werden. Daher kann bei der Konfiguration folgende Zeile weggelassen werden: </p>
+<p><code>asadmin set --port 9048 configs.config.server-config.network-config.protocols.protocol.http-listener-1.http.websockets-support-enabled=true<br />
+</code></p>
+]]></content:encoded>
+			<wfw:commentRss>http://javaee7.de/2013/09/finale-version-von-glassfish-4-0-verwenden/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

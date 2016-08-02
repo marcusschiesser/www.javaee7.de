@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="de-DE">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="de-DE">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="de-DE">
+<![endif]-->
+<!--[if !(IE 6) & !(IE 7) & !(IE 8)]><!-->
+<html lang="de-DE">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>FAQ | Java EE 7</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://www.javaee7.de/wp-content/themes/twentyeleven/style.css" />
+<link rel="pingback" href="http://www.javaee7.de/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://www.javaee7.de/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[353,375] -->
+<meta name="description"  content="Hier können Sie Fragen zu unserem Buch Workshop Java EE 7 stellen." />
+
+<link rel="canonical" href="http://www.javaee7.de/faq/" />
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Java EE 7 &raquo; Feed" href="http://www.javaee7.de/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Java EE 7 &raquo; Comments Feed" href="http://www.javaee7.de/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Java EE 7 &raquo; FAQ Comments Feed" href="http://www.javaee7.de/faq/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.javaee7.de\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crayon-css'  href='http://www.javaee7.de/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.7.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.javaee7.de/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.javaee7.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.7.1","is_admin":"0","ajaxurl":"http:\/\/www.javaee7.de\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Dr\u00fccken Sie %s zum Kopieren, %s zum Einf\u00fcgen","minimize":"Klicken um Code aufzuklappen"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.javaee7.de/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.7.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.javaee7.de/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.javaee7.de/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.1" />
+<link rel='shortlink' href='http://www.javaee7.de/?p=40' />
+		<style>
+		.gist table {
+			margin-bottom: 0 !important;
+		}
+		.gist .line-numbers
+		{
+			width: 4em !important;
+		}
+		.gist .line,
+		.gist .line-number
+		{
+			font-size: 12px !important;
+			height: 18px !important;
+			line-height: 18px !important;
+		}
+		.gist .line
+		{
+			white-space: pre !important;
+			width: auto !important;
+			word-wrap: normal !important;
+		}
+		.gist .line span
+		{
+			word-wrap: normal !important;
+		}
+		</style>
+		</head>
+
+<body class="page page-id-40 page-template-default singular two-column right-sidebar">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+			<hgroup>
+				<h1 id="site-title"><span><a href="http://www.javaee7.de/" rel="home">Java EE 7</a></span></h1>
+				<h2 id="site-description">Informationen über die neue Java Enterprise Version</h2>
+			</hgroup>
+
+						<a href="http://www.javaee7.de/">
+									<img src="http://www.javaee7.de/images/header3.jpg" width="1000" height="288" alt="Java EE 7" />
+							</a>
+			
+								<form method="get" id="searchform" action="http://www.javaee7.de/">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+			
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content">Skip to primary content</a></div>
+												<div class="menu"><ul><li ><a href="http://www.javaee7.de/">Home</a></li><li class="page_item page-item-66"><a href="http://www.javaee7.de/tutorial/">Das Buch</a></li><li class="page_item page-item-40 current_page_item"><a href="http://www.javaee7.de/faq/">FAQ</a></li><li class="page_item page-item-56"><a href="http://www.javaee7.de/ihre-anmerkungen/">Ihre Anmerkungen</a></li><li class="page_item page-item-5"><a href="http://www.javaee7.de/impressum/">Impressum</a></li><li class="page_item page-item-49"><a href="http://www.javaee7.de/mentoring/">Mentoring</a></li></ul></div>
+			</nav><!-- #access -->
+	</header><!-- #branding -->
+
+
+	<div id="main">
+
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					
+<article id="post-40" class="post-40 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">FAQ</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Hier können Sie Fragen zu unserem Buch <a href="http://www.dpunkt.de/buecher/3877/workshop-java-ee-7.html">Workshop Java EE 7</a> stellen.</p>
+			</div><!-- .entry-content -->
+	<footer class="entry-meta">
+			</footer><!-- .entry-meta -->
+</article><!-- #post-40 -->
+
+					
+<div id="disqus_thread">
+            <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="dsq-comment-17">
+        <div id="dsq-comment-header-17" class="dsq-comment-header">
+            <cite id="dsq-cite-17">
+                <span id="dsq-author-user-17">admin</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-17" class="dsq-comment-body">
+            <div id="dsq-comment-message-17" class="dsq-comment-message"><p>Beim Maven-Build kommt folgender Fehler:</p>
+<p>&#8230;.Could not transfer artifact org.apache.maven.surefire:surefire-boote<br />
+r:pom:2.4.3 from/to central (<a href="http://repo.maven.apache.org/maven2" rel="nofollow">http://repo.maven.apache.org/maven2</a>): Connection to<br />
+ <a href="http://proxy.xxxxxxx" rel="nofollow">http://proxy.xxxxxxx</a> refused: Connection timed out: connect</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="dsq-comment-18">
+        <div id="dsq-comment-header-18" class="dsq-comment-header">
+            <cite id="dsq-cite-18">
+                <span id="dsq-author-user-18">admin</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-18" class="dsq-comment-body">
+            <div id="dsq-comment-message-18" class="dsq-comment-message"><p>Maven kann ein notwendiges Artifakt nicht herunterladen. Proxy deutet darauf hin, dass Maven einen Proxy verwenden möchte, für den Sie nicht autorisiert sind. Überprüfen Sie ihre settings.xml (<a href="http://maven.apache.org/guides/mini/guide-proxies.html" rel="nofollow">http://maven.apache.org/guides/mini/guide-proxies.html</a>) oder wechseln Sie die Internetverbindung</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment byuser comment-author-admin bypostauthor even thread-odd thread-alt depth-1" id="dsq-comment-19">
+        <div id="dsq-comment-header-19" class="dsq-comment-header">
+            <cite id="dsq-cite-19">
+                <span id="dsq-author-user-19">admin</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-19" class="dsq-comment-body">
+            <div id="dsq-comment-message-19" class="dsq-comment-message"><p>Funktionieren die Beispiele aus dem Buch 1 zu 1 in NetBeans?</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="dsq-comment-20">
+        <div id="dsq-comment-header-20" class="dsq-comment-header">
+            <cite id="dsq-cite-20">
+                <span id="dsq-author-user-20">admin</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-20" class="dsq-comment-body">
+            <div id="dsq-comment-message-20" class="dsq-comment-message"><p>Unser Workshop ist vollkommen unabhängig von der verwendeten IDE, daher funktioniert auch Netbeans. Sie müssen allerdings den Build mit Maven erstellen und die erzeugte War-Datei, wie im Buch beschrieben, auf dem JBoss deployen.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even depth-2" id="dsq-comment-24">
+        <div id="dsq-comment-header-24" class="dsq-comment-header">
+            <cite id="dsq-cite-24">
+                <span id="dsq-author-user-24">Florian</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24" class="dsq-comment-body">
+            <div id="dsq-comment-message-24" class="dsq-comment-message"><p>Habe gerade Netbeans 7.4 auf Ubuntu 13.10 ausprobiert. Das Eingangsbeispiel zur Konfiguration (Listing 2-1, S. 27ff) funktioniert, sofern ich im URL nicht index.jsf sondern index.xhtml schreibe.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-3" id="dsq-comment-25">
+        <div id="dsq-comment-header-25" class="dsq-comment-header">
+            <cite id="dsq-cite-25">
+                <span id="dsq-author-user-25">Florian</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-25" class="dsq-comment-body">
+            <div id="dsq-comment-message-25" class="dsq-comment-message"><p>Ach ja, und mit Glassfish 4.0 als Server.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even depth-3" id="dsq-comment-26">
+        <div id="dsq-comment-header-26" class="dsq-comment-header">
+            <cite id="dsq-cite-26">
+                <span id="dsq-author-user-26">Florian</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-26" class="dsq-comment-body">
+            <div id="dsq-comment-message-26" class="dsq-comment-message"><p>In Netbeans sind die JSF als Framework zum Projekt hinzuzufügen. Dann funktioniert&#8217;s. <img src="http://www.javaee7.de/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-4" id="dsq-comment-11752">
+        <div id="dsq-comment-header-11752" class="dsq-comment-header">
+            <cite id="dsq-cite-11752">
+                <span id="dsq-author-user-11752">Michael</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-11752" class="dsq-comment-body">
+            <div id="dsq-comment-message-11752" class="dsq-comment-message"><p>Bei mir funktioniert auch nur die index.xhtml. Bei der index.jsf kommt ein Fehler, dass die Datei nicht gefunden wird.</p>
+<p>Nutze Eclipse und hab alles so wie im Buch beschrieben gemacht. (2. Auflage)</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-5" id="dsq-comment-11884">
+        <div id="dsq-comment-header-11884" class="dsq-comment-header">
+            <cite id="dsq-cite-11884">
+                <span id="dsq-author-user-11884">Andreas</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-11884" class="dsq-comment-body">
+            <div id="dsq-comment-message-11884" class="dsq-comment-message"><p>Gleiches Problem: Habe für das erste Beispiel auf eine IDE verzichtet und erhalte die Fehlermeldung &#8220;not found&#8221; wenn ich index.jsf angebe. Was läuft da schief?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-21">
+        <div id="dsq-comment-header-21" class="dsq-comment-header">
+            <cite id="dsq-cite-21">
+                <span id="dsq-author-user-21">Frank Sprich</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-21" class="dsq-comment-body">
+            <div id="dsq-comment-message-21" class="dsq-comment-message"><p>Hallo Zusammen,</p>
+<p>Bisher bin ich sehr zufrieden mit dem Buch.<br />
+Im Curl Befehl auf Seite 263 gibt es einen Typo: &#8220;- d&#8221; sollte &#8220;-d&#8221; heissen:<br />
+curl -k -c cookie.txt -b cookie.txt &#8211;data-urlencode j_username=a@mu.de -d j_password=secret <a href="https://localhost:8443/myaktion/j_security_check" rel="nofollow">https://localhost:8443/myaktion/j_security_check</a> </p>
+<p>Als Äusserst wichtig hat sich das Url Pattern im web.xml /rest/organisator/* erwiesen. Fehlt das &#8220;/*&#8221; funktionieren die Curl Befehle nicht wie erwartet und liefern einen Fehler der Art: &#8220;HTTP Status 408 &#8211; The time allowed for the login process has been exceeded.&#8221; zurück.</p>
+<p>Grüsse Frank</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-22">
+        <div id="dsq-comment-header-22" class="dsq-comment-header">
+            <cite id="dsq-cite-22">
+                <span id="dsq-author-user-22">Burger</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-22" class="dsq-comment-body">
+            <div id="dsq-comment-message-22" class="dsq-comment-message"><p>Hallo,</p>
+<p>im aktuellen JBoss, gestartet aus Eclipse Kepler, erhalte ich beim Deploy-Versuch von my-aktion die folgende Fehlermeldung:<br />
+JBAS014775: Neue fehlende/unbefriedigte Abhängigkeiten:<br />
+service jboss.security.security-domain.my-aktion (fehlende) Dependents: [service jboss.web.deployment.default-host./my-aktion.realm, service jboss.deployment.unit.&#8221;my-aktion.war&#8221;.component.SpendeServiceBean.CREATE, service jboss.deployment.unit.&#8221;my-aktion.war&#8221;.component.SchedulerBean.CREATE, service jboss.deployment.unit.&#8221;my-aktion.war&#8221;.component.AktionServiceBean.CREATE] </p>
+<p>Vielleicht bin ich nicht die Einzige, die dieses Problem hat.<br />
+Mit freundlichen Grüßen<br />
+Burger</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-23">
+        <div id="dsq-comment-header-23" class="dsq-comment-header">
+            <cite id="dsq-cite-23">
+                <span id="dsq-author-user-23">Deniz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-23" class="dsq-comment-body">
+            <div id="dsq-comment-message-23" class="dsq-comment-message"><p>Klasse Buch! Wo kann ich mir den Quellcode für die einzelnen Kapitel runterladen?</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment byuser comment-author-admin bypostauthor even depth-2" id="dsq-comment-30">
+        <div id="dsq-comment-header-30" class="dsq-comment-header">
+            <cite id="dsq-cite-30">
+                <span id="dsq-author-user-30">Marcus Schiesser</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-30" class="dsq-comment-body">
+            <div id="dsq-comment-message-30" class="dsq-comment-message"><p>Diesen finden Sie als GIT-Repository unter <a href="https://github.com/marcusschiesser/my-aktion" rel="nofollow">https://github.com/marcusschiesser/my-aktion</a>. Jedes Kapitel finden Sie in einem eigenem Branch.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-3" id="dsq-comment-36">
+        <div id="dsq-comment-header-36" class="dsq-comment-header">
+            <cite id="dsq-cite-36">
+                <span id="dsq-author-user-36">Sebastian</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-36" class="dsq-comment-body">
+            <div id="dsq-comment-message-36" class="dsq-comment-message"><p>Hallo,</p>
+<p>gibt es auch irgendwo die Lösungen zu den Aufgaben? Wäre echt super hilfreich.</p>
+<p>Vielen Dank!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-27">
+        <div id="dsq-comment-header-27" class="dsq-comment-header">
+            <cite id="dsq-cite-27">
+                <span id="dsq-author-user-27">Jakob</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-27" class="dsq-comment-body">
+            <div id="dsq-comment-message-27" class="dsq-comment-message"><p>Liebe Autoren:</p>
+<p>Ericstmal: Super Buch! Ich bin gerade dabei die Fallstudie durchzuarbeiten und finde<br />
+es ist sehr gut und schluessig beschrieben.</p>
+<p>Ich habe nur ein kleines Problem mit JBoss und Maven. Als ich das Maven-Projekt in Eclipse importiert habe, gab es gleich 3 Errors in der pom.xml. Jedoch habe ich mich nicht um diese gekuemmert, die App hat sich ja deployen lassen. Anschliessend kam ich zu dem Punkt, an dem ich das .css Style integrieren wollte: Es wird ignoriert. Nach einem halben Tag fehlersuche habe ich es einfach uebergangen, schliesslich geht es mir bei dem Workshop nicht um die Styles und ich kann dies zu einem spaeteren Zeitpunkt nachholen.</p>
+<p>Jetzt habe ich versucht Primefaces zu integrieren wie es im Buch steht und es funktioniert einfach nicht. Nach viel Recherche habe ich bestaetigen koennen,, dass die primefaces-3.5.jar in den Maven dependencies verzeichnet ist; dass sie in Eclipse im Verzeichnis target-&gt;my-aktion-&gt;WEB-INF-&gt;lib aufgefuehrt ist; und dass sie auch im .m2 Verzeichniss ist. Es funktioniert einfach nicht und ich weis nicht wo ich jetzt noch suchen sollte.</p>
+<p>Nun wollte ich einerseitz nachfragen, ob Sie mir Tipps geben koennen um das Problem zu loesen.</p>
+<p>Ich habe aber auch gemerkt, dass im Workshop JBoss und Maven vielleicht etwas zu kurz kommen, und dass es da doch etwas mehr Hintergrundwissen und Verstaendniss braucht um eine Applikation aufzusetzten und ggf. ein Troubleshooting zu machen.</p>
+<p>Vielen Dank schonmal,<br />
+Jakob</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-28">
+        <div id="dsq-comment-header-28" class="dsq-comment-header">
+            <cite id="dsq-cite-28">
+                <span id="dsq-author-user-28">Dirk</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-28" class="dsq-comment-body">
+            <div id="dsq-comment-message-28" class="dsq-comment-message"><p>Hallo,</p>
+<p>ich bearbeite derzeit das Kapitel JPA &#8211; die Daten werden also in der DB abgelegt. Wenn ich mehr als 2 Datensätze anlegen und die Anwendung neu starte, dann bekomme ich folgende Fehlermeldung:</p>
+<p> Schwerwiegend [javax.enterprise.resource.webcontainer.jsf.application] (http&#8211;127.0.0.1-8080-8) Error Rendering View[/aktionList.xhtml]: java.lang.IllegalStateException: Cannot create a session after the response has been committed</p>
+<p>Können Sie mir &#8211; trotz dieser nicht sehr ausführlichen Beschreibung &#8211; einen Tipp geben, woran dies liegen könnte? Vielleicht ist Ihnen ähnliches bereits begegnet.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-29">
+        <div id="dsq-comment-header-29" class="dsq-comment-header">
+            <cite id="dsq-cite-29">
+                <span id="dsq-author-user-29">jens</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-29" class="dsq-comment-body">
+            <div id="dsq-comment-message-29" class="dsq-comment-message"><p>Hallo!<br />
+Ich stecke im Exkurs Primefaces fest. Hat jmd. einen Tipp wo ich den Fehler finden kann?<br />
+Das Buch habe ich bis Kapitel 4.6 inklusive abgearbeitet.<br />
+Kap 4.7 übersprungen.<br />
+Kap 4.8.1 erledigt und mvn lädt auch das primefaces 3.5 er jar hoch.<br />
+4.8.2 spendeFormEdit.xhtml<br />
+mit 	den markierten Ersetzungen:<br />
+xmlns:p=&#8221;http://primefaces.org/ui&#8221; </p>
+<p>wie auf Seite116-117 angegeben geändert, Der JBOSS gibt mir jedoch beim Aufruf des Formularlinks die javax.servlet.ServletException:<br />
+The class &#8216;[&#8230;].SpendeFormEditController$Proxy$_$$_WeldClientProxy&#8217; does not have the property &#8216;doOk&#8217;.<br />
+	javax.faces.webapp.FacesServlet.service(FacesServlet.java:606)<br />
+	org.jboss.weld.servlet.ConversationPropagationFilter.doFilter(ConversationPropagationFilter.java:62)<br />
+Was kann der Grund dafür sein, dass das property &#8220;doOk&#8221; bei dem p:commandButton nicht(, bei den h:commandButton jedoch sehr wohl) gesehen wird?<br />
+Danke für Feedback&#8230;<br />
+Jens</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-31">
+        <div id="dsq-comment-header-31" class="dsq-comment-header">
+            <cite id="dsq-cite-31">
+                <span id="dsq-author-user-31">jens</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-31" class="dsq-comment-body">
+            <div id="dsq-comment-message-31" class="dsq-comment-message"><p>Nachtrag:<br />
+Wenn ich den  in spendeFormEdit.xhtml stehen lasse, kommt keine Fehlermeldung &#8230; Weird! </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even depth-2" id="dsq-comment-33">
+        <div id="dsq-comment-header-33" class="dsq-comment-header">
+            <cite id="dsq-cite-33">
+                <span id="dsq-author-user-33">Nicolae Dangel</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-33" class="dsq-comment-body">
+            <div id="dsq-comment-message-33" class="dsq-comment-message"><p>Das Problem hatte ich auch. Bei mir wars dummerweise und misteriöserweise wegen dem auskommentierten ursprünglichen text, der vor mein   stand. Sobald ich das entfernt habe, hats geklappt (5 Stunden Fehlersuche gekostet.. hätte nicht sein dürfen, aber keine Ahnung warum das so war). Hast du evtl auch so ein Kommentar in der xhtml Datei drinnen stehen? Entferne das und probier es noch einmal.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-3" id="dsq-comment-34">
+        <div id="dsq-comment-header-34" class="dsq-comment-header">
+            <cite id="dsq-cite-34">
+                <span id="dsq-author-user-34">Nicolae Dangel</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-34" class="dsq-comment-body">
+            <div id="dsq-comment-message-34" class="dsq-comment-message"><p>anscheinend darf man hier keine Tag- &#8220;&#8221; Zeichen verwenden, die werden aus dem Text entfernt, dann sieht der Kommentar so blöd aus&#8230;</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment byuser comment-author-admin bypostauthor even depth-4" id="dsq-comment-35">
+        <div id="dsq-comment-header-35" class="dsq-comment-header">
+            <cite id="dsq-cite-35">
+                <span id="dsq-author-user-35">Marcus Schiesser</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-35" class="dsq-comment-body">
+            <div id="dsq-comment-message-35" class="dsq-comment-message"><p>Ja, das Kommentarsystem ist aktuell etwas suboptimal. Vielleicht kennt jemand ein gutes Plugin für WordPress?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-32">
+        <div id="dsq-comment-header-32" class="dsq-comment-header">
+            <cite id="dsq-cite-32">
+                <span id="dsq-author-user-32">Nicolae Dangel</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-32" class="dsq-comment-body">
+            <div id="dsq-comment-message-32" class="dsq-comment-message"><p>Bin bei der Seite 129 und bis jetzt begeistert von dem Buch (nach schmerzhaften Erfahrungen mit anderen Anti-Büchern). Allerdings hat die Aufgabe 4.9.3 nicht geklappt. In Git-Repository kann man diese auch nicht gelöst finden. Ich möchte den &#8220;title&#8221; aus der URL für geldSpenden.xhtml als f:viewParam innerhalb von f:metadata einlesen und bekomme ständig den Fehler:<br />
+javax.servlet.ServletException: Error Parsing /geldSpenden.xhtml: Error Traced[line: 23] The element type &#8220;f:metadata&#8221; must be terminated by the matching end-tag &#8220;&#8221;.<br />
+obwohl das entsprechende Tag synthaktisch-richtig geschlossen wurde.<br />
+Hier ein Auszug, vllt sind auch Andere in meiner Situation:</p>
+<p>	Geld spenden</p>
+<p>&lt;h:body<br />
+Was mache ich falsch? Natürlich ist die nächste Frage, wie schreibe ich dynamisch den title oben im  <img src="http://www.javaee7.de/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ? Danke für die Antwort</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-2" id="dsq-comment-211">
+        <div id="dsq-comment-header-211" class="dsq-comment-header">
+            <cite id="dsq-cite-211">
+                <span id="dsq-author-user-211">TheSaint</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-211" class="dsq-comment-body">
+            <div id="dsq-comment-message-211" class="dsq-comment-message"><p>   	#{formConfig.title}</p>
+<p>&#8230;.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt depth-2" id="dsq-comment-410">
+        <div id="dsq-comment-header-410" class="dsq-comment-header">
+            <cite id="dsq-cite-410">
+                <span id="dsq-author-user-410">Nicolae Dangel</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-410" class="dsq-comment-body">
+            <div id="dsq-comment-message-410" class="dsq-comment-message"><p>1. Der Grund warum es nicht funktionierte war ein dummer Fehler von mir, ich hatte das Tag f:viewParam einmal einfach geschlossen mit backslash und &#8220;ist groesser&#8221; und danach noch einmal vollqualifiziert so zu sagen mit backslash und f:viewParam und &#8220;ist groesser&#8221;. Weil ich den ersten backslash nicht bemerkt habe sind wie man sieht ein paar monate vergangen ( <img src="http://www.javaee7.de/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ) &#8230; no comment. Jetzt hab ich das Tag nur einmal geschlossen und es funktioniert, selbstverstaendlich.<br />
+2. Der Wert des Titels hab ich in dem Facelet spendeFormEdit.xhtml ueber die Bean SpendeFormEditController bzw. ihr Objekt formConfig wie folgt:<br />
+h:inputText id=&#8221;title&#8221; value=&#8221;#spendeFormEditController.formConfig.title}&#8221;<br />
+adressiert und nicht direkt über FormConfig &#8211; Bean wie auf Seite 129 Pkt 2 man verstehen könnte.<br />
+@TheSaint Danke fuer die Antwort</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-55">
+        <div id="dsq-comment-header-55" class="dsq-comment-header">
+            <cite id="dsq-cite-55">
+                <span id="dsq-author-user-55">Elena</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-55" class="dsq-comment-body">
+            <div id="dsq-comment-message-55" class="dsq-comment-message"><p>Erstes, vielen herzlichen Dank für das Buch!</p>
+<p>Nun versuche ich &#8220;Hinzufügen eine Spende testen&#8221;. Mit Persistence klappt es definitiv nicht, zuerst tauchen in console folgende Meldungen auf:</p>
+<p>11:02:29,450 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (MSC service thread 1-4) HHH000227: Running hbm2ddl schema export<br />
+11:02:29,451 ERROR [org.hibernate.tool.hbm2ddl.SchemaExport] (MSC service thread 1-4) HHH000389: Unsuccessful: alter table Spende drop constraint FK93FC16E77A6CA0B0<br />
+11:02:29,453 ERROR [org.hibernate.tool.hbm2ddl.SchemaExport] (MSC service thread 1-4) Tabelle &#8220;SPENDE&#8221; nicht gefunden<br />
+Table &#8220;SPENDE&#8221; not found; SQL statement:<br />
+alter table Spende drop constraint FK93FC16E77A6CA0B0 [42102-161]<br />
+11:02:29,454 ERROR [org.hibernate.tool.hbm2ddl.SchemaExport] (MSC service thread 1-4) HHH000389: Unsuccessful: drop sequence hibernate_sequence<br />
+11:02:29,455 ERROR [org.hibernate.tool.hbm2ddl.SchemaExport] (MSC service thread 1-4) Sequenz &#8220;HIBERNATE_SEQUENCE&#8221; nicht gefunden<br />
+Sequence &#8220;HIBERNATE_SEQUENCE&#8221; not found; SQL statement:<br />
+drop sequence hibernate_sequence [90036-161]<br />
+11:02:29,458 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (MSC service thread 1-4) HHH000230: Schema export complete</p>
+<p>Danach werden die Entities nicht persisiert können und deswegen kommen die Fehler:<br />
+11:02:29,816 ERROR [org.jboss.ejb3.invocation] (http-localhost-127.0.0.1-8080-1) JBAS014134: EJB Invocation failed on component AktionServiceBean for method public abstract void de.dpunkt.myaktion.services.AktionService.addAktion(de.dpunkt.myaktion.model.Aktion): javax.ejb.EJBException: javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: de.dpunkt.myaktion.model.Aktion<br />
+.<br />
+Ich sehe eigentlich, dass etwas mit der DB-Verbindung nicht klappt (wobei nur beim Testen). persistence.xml und persistence-test.xml sind da, test-ds.xml ist auch da und sehen richtig aus (ich habe mit dem Quellcode verglichen). Der einfache Test (AktionEditTest) klappt reibungslos.  Ich verstehe auch, dass es etwas schweirig wäre, etwas zu sagen. Aber, ganz allgemein: was muss man noch beachten?</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-1059">
+        <div id="dsq-comment-header-1059" class="dsq-comment-header">
+            <cite id="dsq-cite-1059">
+                <span id="dsq-author-user-1059">Clemens</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1059" class="dsq-comment-body">
+            <div id="dsq-comment-message-1059" class="dsq-comment-message"><p>Das Problem hatte ich auch. Die ersten Fehler im Log &#8216;Tabelle Spende nicht gefunden&#8217;, habe ich erst mal ignoriert. Entscheident ist die Meldung &#8216; javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: de.dpunkt.myaktion.model.Aktion&#8217;: Hier habe ich Code aus dem Mock-Service in die TestDataFactory kopiert und dabei übersehen, das Setzen der ID zu entfernen. Mit gesetzter Id geht aber Hibernate davon aus, dass der Satz schon da ist und damit nicht angelegt werden kann. (kannst ja mal nach der Fehlermeldung googeln, da gibt es ein paar Tipps zu diesem Fehler&#8230;)<br />
+Danach ging es bei mir.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-3" id="dsq-comment-3759">
+        <div id="dsq-comment-header-3759" class="dsq-comment-header">
+            <cite id="dsq-cite-3759">
+                <span id="dsq-author-user-3759">Markus Rohlof</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-3759" class="dsq-comment-body">
+            <div id="dsq-comment-message-3759" class="dsq-comment-message"><p>Danke, du bist mein Held! Danach hätte ich noch stundenlang suchen können&#8230;</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-209">
+        <div id="dsq-comment-header-209" class="dsq-comment-header">
+            <cite id="dsq-cite-209">
+                <span id="dsq-author-user-209">TheSaint</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-209" class="dsq-comment-body">
+            <div id="dsq-comment-message-209" class="dsq-comment-message"><p>Hallo,</p>
+<p>soweit ist das Buch sehr lehrreich. Allerdings fehlen mir zu den Aufgabenstellungen exemplarische Lösungen um zu schauen, ob man es richtig gemacht/gelöst hat. Leider sind im Git-Repo auch nur die Versionen welche man durch abtippen der Quelltexte im Buch hat. Wäre schön, wenn man Beispiellösungen zu den Aufgaben ebenfalls per Git bereitstellen würde.</p>
+<p>Anmerkung: Der Link <a href="http://javaee7/tutorial" rel="nofollow">http://javaee7/tutorial</a> führt ins Nichts. WordPress liefert &#8220;Ups, diesen Inhalt gibt es wohlt nicht.&#8221; . Bitte &#8220;reparieren (Auch den Rechtschreibfehler in der Fehlermeldung &#8220;wohlt&#8221; <img src="http://www.javaee7.de/wp-includes/images/smilies/simple-smile.png" alt=":-)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> )</p>
+<p>Grüße</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment byuser comment-author-admin bypostauthor even depth-2" id="dsq-comment-223">
+        <div id="dsq-comment-header-223" class="dsq-comment-header">
+            <cite id="dsq-cite-223">
+                <span id="dsq-author-user-223">Marcus Schiesser</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-223" class="dsq-comment-body">
+            <div id="dsq-comment-message-223" class="dsq-comment-message"><p>Danke für die Hinweise. Der Link funktioniert nun wieder.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-261">
+        <div id="dsq-comment-header-261" class="dsq-comment-header">
+            <cite id="dsq-cite-261">
+                <span id="dsq-author-user-261">IronMania</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-261" class="dsq-comment-body">
+            <div id="dsq-comment-message-261" class="dsq-comment-message"><p>was muss ich ändern, um die Tests auf Wildfly laufen lassen zu können?<br />
+Deploy läuft super auf wildfly, aber die Tests nicht<br />
+Ich habe in der pom.xml die Dependency geändert:</p>
+<p>                    org.wildfly<br />
+                    wildfly-arquillian-container-remote<br />
+                    8.0.0.Final<br />
+                    test</p>
+<p>leider reicht das nicht.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-670">
+        <div id="dsq-comment-header-670" class="dsq-comment-header">
+            <cite id="dsq-cite-670">
+                <span id="dsq-author-user-670">Max</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-670" class="dsq-comment-body">
+            <div id="dsq-comment-message-670" class="dsq-comment-message"><p>Hallo,</p>
+<p>ich komme nur bis Seite 98. Ich habe das Facelet spendeList.xhtml implementiert aber beim Klicken auf den commandLink &#8220;Editieren&#8221; im facelet aktionList.xhtml wird anscheinend die dazugehörige &#8220;Aktion&#8221; nicht richtig übergeben.</p>
+<p>Was jedoch sehr komisch ist: ich kann auf die Attribute der übergebenen &#8220;Aktion&#8221; im SpendeListController zugreifen und mir die auch in der Konsole ausgeben lassen aber sie werden nicht in der Webseite angezeigt.</p>
+<p>Woran kann das liegen? Ich habe schon ca 2 Stunden mit googlen verbracht aber finde keinen Ansatz</p>
+<p>Danke schon mal im voraus! LG Max</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-1750">
+        <div id="dsq-comment-header-1750" class="dsq-comment-header">
+            <cite id="dsq-cite-1750">
+                <span id="dsq-author-user-1750">Juergen</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1750" class="dsq-comment-body">
+            <div id="dsq-comment-message-1750" class="dsq-comment-message"><p>Hallo Max,</p>
+<p>ich vermute dass Du dein Problem in der Zwischenzeit schon selber gelöst hast, aber vielleicht für alle anderen, die das Problem haben, hier mal was bei mir das oben beschriebene Verhalten ausgelöst hat:</p>
+<p>Ich hatte die Annotation @Sessionscoped falsch importiert. Bei mir stand:<br />
+import javax.faces.bean.SessionScoped</p>
+<p>richtig gewesen wäre aber:</p>
+<p>import javax.enterprise.context.SessionScoped;</p>
+<p>Es steht zwar im Buch richtig drin, aber ich hatte den Abschnitt nur überflogen und somit falsch gemacht. Da mir der Fehler gleich beim ersten import passiert ist und dann immer wieder, wars schwierig den Fehler zu finden.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-690">
+        <div id="dsq-comment-header-690" class="dsq-comment-header">
+            <cite id="dsq-cite-690">
+                <span id="dsq-author-user-690">Beat Jost</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-690" class="dsq-comment-body">
+            <div id="dsq-comment-message-690" class="dsq-comment-message"><p>Nach dem Import (Maven) der &#8220;Beispiel-Projekte&#8221; (ab GIT) erhalte ich 2 Fehler in den XML-Files &#8216;myaktion-ds.xml&#8217; und &#8216;test-ds.xml&#8217;. Hat jemand eine Ahnung was ich da falsch mache?</p>
+<p>Referenced file contains errors (<a href="http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd" rel="nofollow">http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd</a>). For more information, right click on the message in the Problems View and select &#8220;Show Details&#8230;&#8221;<br />
+Nach Validierung steht in den Details:  &#8220;White spaces are required between publicId and systemId&#8221;.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-922">
+        <div id="dsq-comment-header-922" class="dsq-comment-header">
+            <cite id="dsq-cite-922">
+                <span id="dsq-author-user-922">Daniel</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-922" class="dsq-comment-body">
+            <div id="dsq-comment-message-922" class="dsq-comment-message"><p>Hallo,<br />
+nehme mir gerade das Buch vor. Leider mußte ich bereits auf Seite 34 scheitern.</p>
+<p>Nach Hinzufügen des maven-Projektes in Eclipse erstelle ich eine Run-Configuration und führe diese aus. Klappt leider nicht mit:<br />
+ERROR: JBREM000200: Remote connection failed: javax.security.sasl.SaslException: Authentification failed: all available authentification mechanisms failed.</p>
+<p>Führe ich das Deploy direkt auf der Konsole mit mvn aus, funktioniert es aber tadellos. Allerdings werde ich hier nach einem Username gefragt, den ich auch für das ManagementRealm vorher angelegt habe.</p>
+<p>System: Debian in VM, gesamte VM für das Buch neu aufgesetzt. JBoss lokal installiert, exakt nach dem Buch. Java 7</p>
+<p>Danke!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-1060">
+        <div id="dsq-comment-header-1060" class="dsq-comment-header">
+            <cite id="dsq-cite-1060">
+                <span id="dsq-author-user-1060">Clemens</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1060" class="dsq-comment-body">
+            <div id="dsq-comment-message-1060" class="dsq-comment-message"><p>Ich finde das Buch super.<br />
+Bei dem Testlauf am Ende von Abschnitt 6.5 bekomme ich Fehlermeldung:</p>
+<p> T E S T S<br />
+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-<br />
+Running de.dpunkt.myaktion.test.TestDataFactory<br />
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.038 sec &lt;&lt;&lt; FA<br />
+ILURE!<br />
+Running de.dpunkt.myaktion.test.AktionEditTest<br />
+log4j:WARN No appenders could be found for logger (org.jboss.logging).<br />
+log4j:WARN Please initialize the log4j system properly.<br />
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.438 sec<br />
+Running de.dpunkt.myaktion.test.SpendeListTest<br />
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.921 sec</p>
+<p>Results :</p>
+<p>Tests in error:<br />
+  initializationError(de.dpunkt.myaktion.test.TestDataFactory)</p>
+<p>Tests run: 4, Failures: 0, Errors: 1, Skipped: 0</p>
+<p>Im Serverlog finde ich keinen Eintrag, den ich mit dem Initialisierungsfehler in Verbindung bringe.<br />
+Die eigentlichen Testroutinen scheinen auch zu funktionieren.<br />
+Hat noch jemand dieses Problem und einen Lösungsansatz dazu?</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-8055">
+        <div id="dsq-comment-header-8055" class="dsq-comment-header">
+            <cite id="dsq-cite-8055">
+                <span id="dsq-author-user-8055">Patrick</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8055" class="dsq-comment-body">
+            <div id="dsq-comment-message-8055" class="dsq-comment-message"><p>Hab dasselbe Problem.<br />
+Versuchte, ein log4j.properties im test context (im Folder Web-INF/classes) einzubinden, funktionierte aber immer noch nicht.<br />
+Gibts dazu eine Lösung, oder einen Kommentar seitens der Autoren?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-1063">
+        <div id="dsq-comment-header-1063" class="dsq-comment-header">
+            <cite id="dsq-cite-1063">
+                <span id="dsq-author-user-1063">Ciho</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1063" class="dsq-comment-body">
+            <div id="dsq-comment-message-1063" class="dsq-comment-message"><p>Hallo zusammen,<br />
+als erstes, vielen Dank für das sehr lehrreiche Buch 😉 &#8230; hab viel durch dieses Buch dazu gelernt. </p>
+<p>Habe nur ein kleines &#8220;Problemchen&#8221;.  </p>
+<p>Hab das ganze Projekt auf einem Mac OS X erstellt und dran gearbeitet. Bisher auch soweit ALLES top funktioniert. Nur habe ein Problem auf Seite 304. Irgendwie scheint mein REST-Service nicht zu funktionieren bzw. die Spendenliste nicht abzurufen. Ich habe mehrmals ein Auge über die Codes geworfen .. neu deployed .. aktualisiert .. und immer wieder nachgeschaut woran es liegen könnte.. Nachdem ich alles wie beschrieben Deploye und ausführe, herrscht beim Monitor totenstille.  Ich komme nicht weiter.<br />
+Die erste Version der WebSocket-Klasse &#8220;MonitorWebSocket&#8221; hat wunderbar funktioniert dadurch das es in der Klasse gegebenen Daten waren. Doch nach der bearbeitung dieser Klasse bekomme ich keine Ausgabe mehr .. Nada .. Null .. Nüx&#8230;</p>
+<p>Ich hoffe das mir jemand eventl. helfen kann&#8230;.</p>
+<p>Danke im voraus</p>
+<p>MFG</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-2060">
+        <div id="dsq-comment-header-2060" class="dsq-comment-header">
+            <cite id="dsq-cite-2060">
+                <span id="dsq-author-user-2060">Marco</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-2060" class="dsq-comment-body">
+            <div id="dsq-comment-message-2060" class="dsq-comment-message"><p>Hätte ich mit Ihrem Buch Probleme die Beispiele auf einem Tomcat TomEE zu implementieren?</p>
+<p>Vielen Dank für die Antwort</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment byuser comment-author-admin bypostauthor even depth-2" id="dsq-comment-2748">
+        <div id="dsq-comment-header-2748" class="dsq-comment-header">
+            <cite id="dsq-cite-2748">
+                <span id="dsq-author-user-2748">Marcus Schiesser</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-2748" class="dsq-comment-body">
+            <div id="dsq-comment-message-2748" class="dsq-comment-message"><p>Das sollte bis zum JPA-Kapitel ohne Aenderungen gehen, ab JPA werden Anwendungsserver spezifische Konfigurationen noetig.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-3713">
+        <div id="dsq-comment-header-3713" class="dsq-comment-header">
+            <cite id="dsq-cite-3713">
+                <span id="dsq-author-user-3713">Markus Rohlof</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-3713" class="dsq-comment-body">
+            <div id="dsq-comment-message-3713" class="dsq-comment-message"><p>Hallo, erstmal auch von hier vielen Dank für den lehrreichen Workshop, habe bereits viel Neues dazugelernt.<br />
+Nun bin ich auf Seite 177 angekommen, dort soll man nach dem Konfigurieren der Datenquellen das Ganze wieder deployen. Ich habe auch schön brav Zeile für Zeile der Konfigurations-Dateien überprüft, bekam aber in dem Moment, in dem ich nach dem Deployen (initial) auf die aktionList.jsf-Seite gegangen bin, den Fehler:</p>
+<p>&#8216;Tabelle &#8220;AKTION&#8221; nicht gefunden&#8217;. [&#8230;]<br />
+org.jboss.weld.exceptions.WeldException: WELD-000049 Unable to invoke [method] @PostConstruct public de.dpunkt.myaktion.data.AktionListProducer.init() on de.dpunkt.myaktion.data.AktionListProducer@616da221</p>
+<p>Daraufhin habe ich nach einigem hin und her versuchsweise die property hibernate.hbm2ddl.auto von &#8220;update&#8221; auf &#8220;create-drop&#8221; geändert (dieser Wert stand dort anfangs mal drin, die Datei war nämlich schon vorgefertigt vorhanden):</p>
+<p>Nun funktioniert alles. Liegt das an irgendwelchen neueren Versionen, die ich möglicherweise ohne es zu ahnen ausgeliefert bekommen habe?<br />
+Ich habe nämlich ziemlich lange gebraucht, um darauf zu kommen, diesen value zurückzuändern, da in 6.4.1 so ausführlich darauf eingegangen wird, dass &#8220;update&#8221; für uns im Moment die richtige Wahl sei&#8230;</p>
+<p>Liebe Grüße<br />
+Markus</p>
+<p>PS: Nachdem ich ein Mal initial &#8220;create-drop&#8221; verwendet habe, kann ich nun scheinbar auch auf &#8220;update&#8221; umsteigen. Jedenfalls erscheint hier keine Fehlermeldung mehr.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-5744">
+        <div id="dsq-comment-header-5744" class="dsq-comment-header">
+            <cite id="dsq-cite-5744">
+                <span id="dsq-author-user-5744">Oliver</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5744" class="dsq-comment-body">
+            <div id="dsq-comment-message-5744" class="dsq-comment-message"><p>Hallo,</p>
+<p>wollte &#8220;mal schnell&#8221; loslegen. Da ich mit maven nicht firm bin, scheitere ich auf S. 25. Da steht:</p>
+<p>&#8220;Die Erzeugung des Maven-Projektes geschieht Schritt für Schritt im interaktiven<br />
+Modus (Standardeinstellung). Dabei werden verschiedene Informationen<br />
+zum Projekt abgefragt. Zunächst werden wir von Maven nach der groupId<br />
+gefragt.&#8221;</p>
+<p>Das ist nicht ganz korrekt. Zuerst wird das hier gefragt:</p>
+<p>*The Scala tool version is generated automatically.<br />
+*Some Scala versions may not be compatible with selected test library versions. Adjust as necessary.)<br />
+1183: remote -&gt; pro.savant.circumflex:webapp-archetype (-)<br />
+1184: remote -&gt; ru.circumflex:circumflex-archetype (-)<br />
+1185: remote -&gt; ru.nikitav.android.archetypes:release (-)<br />
+1186: remote -&gt; ru.nikitav.android.archetypes:release-robolectric (-)<br />
+1187: remote -&gt; ru.stqa.selenium:webdriver-java-archetype (Archetype for a Maven project intended to develop tests with<br />
+Selenium WebDriver and JUnit/TestNG)<br />
+1188: remote -&gt; ru.stqa.selenium:webdriver-junit-archetype (Archetype for a Maven project intended to develop tests with<br />
+ Selenium WebDriver and JUnit)<br />
+1189: remote -&gt; ru.stqa.selenium:webdriver-testng-archetype (Archetype for a Maven project intended to develop tests wit<br />
+h Selenium WebDriver and TestNG)<br />
+1190: remote -&gt; ru.yandex.cocaine:cocaine-client-archetype (Archetype for creating a basic client for Cocaine Applicatio<br />
+n Engine.)<br />
+1191: remote -&gt; ru.yandex.cocaine:cocaine-worker-archetype (Archetype for creating a basic worker for Cocaine Applicatio<br />
+n Engine.)<br />
+1192: remote -&gt; ru.yandex.qatools.camelot:camelot-plugin (-)<br />
+1193: remote -&gt; se.vgregion.javg.maven.archetypes:javg-minimal-archetype (-)<br />
+1194: remote -&gt; sk.seges.sesam:sesam-annotation-archetype (-)<br />
+1195: remote -&gt; tk.skuro:clojure-maven-archetype (A simple Maven archetype for Clojure)<br />
+1196: remote -&gt; tr.com.lucidcode:kite-archetype (A Maven Archetype that allows users to create a Fresh Kite project)<br />
+1197: remote -&gt; uk.ac.rdg.resc:edal-ncwms-based-webapp (-)<br />
+1198: remote -&gt; us.fatehi:schemacrawler-archetype-maven-project (-)<br />
+1199: remote -&gt; us.fatehi:schemacrawler-archetype-plugin-command (-)<br />
+1200: remote -&gt; us.fatehi:schemacrawler-archetype-plugin-lint (-)<br />
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): :</p>
+<p>Da kann ich eingeben, was ich will, das pom.xml aus dem Buch wird nie erzeugt. Überschreibe ich es wie im Buch angegeben und versuche das Projekt zu kompilieren und auszuführen, ernte ich nur Error-404. Was könnte da falsch sein?</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-5819">
+        <div id="dsq-comment-header-5819" class="dsq-comment-header">
+            <cite id="dsq-cite-5819">
+                <span id="dsq-author-user-5819">Oliver</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5819" class="dsq-comment-body">
+            <div id="dsq-comment-message-5819" class="dsq-comment-message"><p>Ihr Schweigen deute ich als: &#8220;Probier halt weiter!&#8221;</p>
+<p>Ok. Wenn man </p>
+<p>mvn archetype:generate -Dfilter=com.airhacks: </p>
+<p>ausführt, findet man wenigstens den richtigen Entry. </p>
+<p>Ändert aber nichts an dem Fehler, den ich nicht zu beseitigen weiß:</p>
+<p>[INFO] &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<br />
+[INFO] BUILD FAILURE<br />
+[INFO] &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<br />
+[INFO] Total time: 4.016 s<br />
+[INFO] Finished at: 2014-11-25T16:10:11+01:00<br />
+[INFO] Final Memory: 19M/279M<br />
+[INFO] &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<br />
+[ERROR] Failed to execute goal org.wildfly.plugins:wildfly-maven-plugin:1.0.1.Final:deploy (default-cli) on project my-a<br />
+ktion: Deployment failed and was rolled back. -&gt; [Help 1]<br />
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.wildfly.plugins:wildfly-maven-plugin:<br />
+1.0.1.Final:deploy (default-cli) on project my-aktion: Deployment failed and was rolled back.<br />
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:216)<br />
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)<br />
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)<br />
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:108)<br />
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:76)<br />
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.<br />
+java:51)<br />
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:116)<br />
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:361)<br />
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155)<br />
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584)<br />
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:213)<br />
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:157)<br />
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+        at java.lang.reflect.Method.invoke(Method.java:483)<br />
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)<br />
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)<br />
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)<br />
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)<br />
+Caused by: org.wildfly.plugin.common.DeploymentExecutionException: Deployment failed and was rolled back.<br />
+        at org.wildfly.plugin.deployment.standalone.StandaloneDeployment.execute(StandaloneDeployment.java:180)<br />
+        at org.wildfly.plugin.deployment.AbstractDeployment.executeDeployment(AbstractDeployment.java:121)<br />
+        at org.wildfly.plugin.deployment.AbstractDeployment.doExecute(AbstractDeployment.java:146)<br />
+        at org.wildfly.plugin.deployment.AbstractAppDeployment.doExecute(AbstractAppDeployment.java:70)<br />
+        at org.wildfly.plugin.deployment.AbstractDeployment.execute(AbstractDeployment.java:111)<br />
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:133)<br />
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)<br />
+        &#8230; 19 more</p>
+<p>Die Laune ist im Keller. Kein guter Start in einen Workshop &#8230; <img src="http://www.javaee7.de/wp-includes/images/smilies/frownie.png" alt=":(" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-3" id="dsq-comment-7125">
+        <div id="dsq-comment-header-7125" class="dsq-comment-header">
+            <cite id="dsq-cite-7125">
+                <span id="dsq-author-user-7125">Martin</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7125" class="dsq-comment-body">
+            <div id="dsq-comment-message-7125" class="dsq-comment-message"><p>Wenn der Maven-Befehl so ausgeführt wird erhält man alle archetypes der groupId com.airhacks. Das sind nicht viele (zur Zeit 3). Man ist dann im interaktiven Modus und muss zunächst  den Richtigen durch Eingabe der angezeigten Nummer auswählen (Z.B. 3 bei Anzeige von &#8220;3: remote -&gt; com.airhacks:javaee7-essentials-archetype&#8221;). Danach noch die richtige Version durch Eingabe der angezeigten Nummer wählen (z.B. 3 bei Anzeige von &#8220;3: 1.2&#8221;) . Danach werden auch die Punkte aus dem Buch Schritt für Schritt abgefragt.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt depth-2" id="dsq-comment-7124">
+        <div id="dsq-comment-header-7124" class="dsq-comment-header">
+            <cite id="dsq-cite-7124">
+                <span id="dsq-author-user-7124">Martin</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7124" class="dsq-comment-body">
+            <div id="dsq-comment-message-7124" class="dsq-comment-message"><p>Das sieht aber doch so aus, wie wenn der Maven-Befehl nicht in einer Zeile eingegeben worden wäre. Gibt man nur &#8220;mvn archetype:generate&#8221; ein, bekommt man eine Liste von möglichen archetypes (ähnlich wie oben &#8220;1192: &#8230;&#8221;). Vielleicht war doch auch ein Tippfehler oder ein Sonderzeichen durch Copy&amp;Paste in dem Kommando enthalten. Ich habe es selbst nochmal probiert und keine Probleme gehabt.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-3" id="dsq-comment-7313">
+        <div id="dsq-comment-header-7313" class="dsq-comment-header">
+            <cite id="dsq-cite-7313">
+                <span id="dsq-author-user-7313">Oliver</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7313" class="dsq-comment-body">
+            <div id="dsq-comment-message-7313" class="dsq-comment-message"><p>Hallo, danke für&#8217;s Nachvollziehen. Inzwischen ist das Problem gelöst. Beim allerersten Versuch machte ich einen entscheidenden Deployment-Fehler. Im pom.xml vergaß ich diese Zeile:</p>
+<p>    war</p>
+<p>Dadurch wird ein jar deployt. Beim Umbau der pom.xml wird nie mehr versucht, die jar zu undeployen, aber eine war wird auch nie mehr deployt &#8230; <img src="http://www.javaee7.de/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Inzwischen bin ich im Kapitel 6 gelandet. Als Zwischenstand möchte ich mal sagen, dass der Kurs in meinen Augen sehr praxisorientiert ist. Die notwendigen Schritte der Realität werden nicht völlig ausgelassen, sondern wenigstens an einem simplen Beispiel erläutert. Das gefällt mir sehr gut. Vielen Dank dafür.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-8210">
+        <div id="dsq-comment-header-8210" class="dsq-comment-header">
+            <cite id="dsq-cite-8210">
+                <span id="dsq-author-user-8210">Oliver</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8210" class="dsq-comment-body">
+            <div id="dsq-comment-message-8210" class="dsq-comment-message"><p>Offenbar hatte ich einen Fehler damit gemacht, statt Wildfly 8.1.0.Final die nächste Version 8.2.0.Final zu installieren.</p>
+<p>Beim Einfügen von Donations kommt es zu einem üblen Fehler:</p>
+<p>$ cat myaktion1.trace.db<br />
+01-10 15:41:08 jdbc[2]: exception<br />
+org.h2.jdbc.JdbcSQLException: Dieses Feature wird nicht unterstützt: &#8220;isWrapperFor&#8221;<br />
+Feature not supported: &#8220;isWrapperFor&#8221; [50100-173]<br />
+        at org.h2.message.DbException.getJdbcSQLException(DbException.java:331)<br />
+        at org.h2.message.DbException.get(DbException.java:171)<br />
+        at org.h2.message.DbException.get(DbException.java:148)<br />
+        at org.h2.message.DbException.getUnsupportedException(DbException.java:206)<br />
+        at org.h2.message.TraceObject.unsupported(TraceObject.java:391)<br />
+        at org.h2.jdbc.JdbcStatement.isWrapperFor(JdbcStatement.java:1067)<br />
+        at org.jboss.jca.adapters.jdbc.JBossWrapper.unwrapInnerMost(JBossWrapper.java:119)<br />
+        at org.jboss.jca.adapters.jdbc.JBossWrapper.isWrapperFor(JBossWrapper.java:61)<br />
+        at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.isTypeOf(ResultSetReturnImpl.java:99)</p>
+<p>Installiere ich 8.1.0, bleibt der Fehler aus. Allerdings werden die Donations einfach nicht angezeigt, obwohl sie in &#8220;wilder&#8221; Form die in der DB-Datei zu sehen sind:</p>
+<p>iALTER TABLE PUBLIC.DONATION ADD CONSTRAINT PUBLIC.CONSTRAINT_7 PRIMARY KEY(ID) XCREATE INDEX PUBLIC.FK_C0X41VH2OF8FY0BXO82FU5YTB_INDEX_7 ON PUBLIC.DONATION(CAM▒ALTER TABLE PUBLIC.DONATION ADD CONSTRAINT PUBLIC.FK_C0X41VH2OF8FY0BXO82FU5YTB FOREIGN KEY(CAMPAIGN_ID) INDEX PUBLIC.FK_C0X41VH2OF8FY0BXO82FU5YTB_INDEX_7 REFER7CREATE SEQUENCE PUBLIC.HIBERNATE_SEQUENCE START WITH 33:1WDE54545450000904666MMagdalenaKBadBank▒▒MDom lebt!▒▒G;        2XDE345567535345000888XDeutsche Deppen Bank▒▒JMedinaA!18        3XDE345567535345000555SDagobert United▒▒<br />
+                                                                LBertholdA!14  4XIT002222444422224444QRomeDomeBanca▒▒jIC▒$sar@!1</p>
+<p>Das Rätsel ist groß &#8230;</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-8793">
+        <div id="dsq-comment-header-8793" class="dsq-comment-header">
+            <cite id="dsq-cite-8793">
+                <span id="dsq-author-user-8793">Oliver</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8793" class="dsq-comment-body">
+            <div id="dsq-comment-message-8793" class="dsq-comment-message"><p>Hallo,<br />
+hatte endlich mal wieder Zeit, fortzufahren mit dem Stoff. Glassfish 4 ist aufegsetzt, läuft auch. Da meine Codierung nicht klappte, habe ich den Code von Eurem github geholt und übersetzt. Einzige Änderung: Mein Server auf JBoss heißt my-aktion1.</p>
+<p>Keys sind importiert:<br />
+keytool -importkeystore -srckeystore %JBOSS_HOME%\standalone\configuration\my-aktion1.keystore -destkeystore d:\Users\Oliver\dev\java_ee\glassfish4\glassfish\domains\domain_my-aktion\config\keystore.jks<br />
+keytool -importkeystore -srckeystore %JBOSS_HOME%\standalone\configuration\my-aktion1.keystore -destkeystore d:\Users\Oliver\dev\java_ee\glassfish4\glassfish\domains\domain_my-aktion\config\cacerts.jks</p>
+<p>Die Tests mit CURL funzen. Kein Problem.</p>
+<p>Im Code S. 334 muss IMHO stehen:</p>
+<p>    private static final String REST_DONATION_LIST = &#8220;https://&#8221; + REST_HOST + &#8220;:&#8221;  + REST_PORT + &#8220;/my-aktion1/rest/organizer/donation/list/&#8221;;</p>
+<p>statt </p>
+<p>    private static final String REST_DONATION_LIST = &#8220;https://&#8221; + REST_HOST + &#8220;:&#8221; + REST_PORT + &#8220;/my-aktion1/rest/donation/list/&#8221;;</p>
+<p>Helfen tut das nicht.</p>
+<p>Was geht nicht?</p>
+<p>[2015-01-28T21:13:42.558+0100] [glassfish 4.0] [SEVERE] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=105 _ThreadName=deployment-jar-scanner] [timeMillis: 1422476022558] [levelValue: 1000] [[<br />
+  Exception while visiting WEB-INF/classes/de/dpunkt/myaktion/model/DonationListMBR.class of size 5301<br />
+java.lang.ArrayIndexOutOfBoundsException: 2925<br />
+	at org.objectweb.asm.ClassReader.readClass(ClassReader.java:2015)<br />
+	at org.objectweb.asm.ClassReader.accept(ClassReader.java:469)<br />
+	at org.objectweb.asm.ClassReader.accept(ClassReader.java:425)<br />
+	at org.glassfish.hk2.classmodel.reflect.Parser$5.on(Parser.java:362)<br />
+	at com.sun.enterprise.v3.server.ReadableArchiveScannerAdapter.handleEntry(ReadableArchiveScannerAdapter.java:165)<br />
+	at com.sun.enterprise.v3.server.ReadableArchiveScannerAdapter.onSelectedEntries(ReadableArchiveScannerAdapter.java:127)<br />
+	at org.glassfish.hk2.classmodel.reflect.Parser.doJob(Parser.java:347)<br />
+	at org.glassfish.hk2.classmodel.reflect.Parser.access$300(Parser.java:67)<br />
+	at org.glassfish.hk2.classmodel.reflect.Parser$3.call(Parser.java:306)<br />
+	at org.glassfish.hk2.classmodel.reflect.Parser$3.call(Parser.java:295)<br />
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+	at java.lang.Thread.run(Thread.java:745)<br />
+]]</p>
+<p>Wenn ich Google richtig verstehe, ist das ein Problem mit dem Lambda-Support von Glassfish 4.0. Muss ich auf 4.0.1 wechseln oder was?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-8931">
+        <div id="dsq-comment-header-8931" class="dsq-comment-header">
+            <cite id="dsq-cite-8931">
+                <a id="dsq-author-user-8931" href="http://Resultat" target="_blank" rel="nofollow">Oliver</a>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8931" class="dsq-comment-body">
+            <div id="dsq-comment-message-8931" class="dsq-comment-message"><p>Glassfish 4.0.1 und 4.1 lösen das Probelm auch nicht. Bei 4.1 wechselt es zu einem Security-Error. Mir fehlt leider die Zeit, das weiter zu untersuchen.</p>
+<p>Abschließend habe ich noch einige Versuche mit Openshift unternommen. Sehr interessant, dass &#8216;git push&#8217; auch gleich den Redeploy auslöst. Das muss ich mal googlen, wieso das funktioniert. (Da Git 2.5.x installiert wird, muss man auf jeden Fall einige globals einstellen, u.a. git config &#8211;global push.default matching).</p>
+<p>Die Sache mit der SQL-Konsole hat nicht funktioniert. Ich stoppte irgendwann die app mit &#8216;rhc app stop&#8217;. Dann öffnete sich wenigstens die Konsole. Die Inserts klappten nicht. Die Tabelle fehlte und wurde nicht automatisch angelegt.</p>
+<p>Die letzten Kapitel sind recht wichtig und interessant. Leider sind sie wohl doch etwas hektisch entstanden. Es fehlen öfters mal Erklärungen, was das nun genau soll. Dass nun ausgerechnet wichtige Protokollteile nicht nachvollzogen werden konnten, ist besonders bitter. Auch die Filter-Lambdas kann man in meinen Augen nicht kommentarlos voraussetzen. </p>
+<p>Trotzdem Danke für das Buch und falls Ihr mal irgendwann auch die Aufgaben-Lösungen auf github legt, habt Ihr definitiv nochmal Extrapunkte gesammelt. </p>
+<p>CU!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-9144">
+        <div id="dsq-comment-header-9144" class="dsq-comment-header">
+            <cite id="dsq-cite-9144">
+                <span id="dsq-author-user-9144">j.a</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-9144" class="dsq-comment-body">
+            <div id="dsq-comment-message-9144" class="dsq-comment-message"><p>Ich habe ein Problem das ich nicht lösen kann. Sobald ich die jboss-web.xml (Seite 252) produziere, hört alles auf zu funktionieren. Wildfly bring dann folgenden Fehler: </p>
+<p>JBAS014775:    New missing/unsatisfied dependencies:<br />
+      service jboss.naming.context.java.app.my-aktion.my-aktion.&#8221;DonationServiceBean!de.dpunkt.myaktion.services.DonationService&#8221; (unavailable) dependents: [service jboss.deployment.unit.&#8221;my-aktion.war&#8221;.component.DonationServiceBean.JndiBindingsService]<br />
+      service jboss.naming.context.java.module.my-aktion.my-aktion.DonationServiceBean (unavailable) dependents: [service jboss.deployment.unit.&#8221;my-aktion.war&#8221;.component.DonationServiceBean.JndiBindingsService] </p>
+<p>Auch nachdem ich den gesamten Code aus github ziehe, bleibt der Fehler bestehen. Ich habe jetzt den Stand vom Ende des Kapitels JPA wiederhergestellt und habe mich bis 8.2.3 vorgearbeitet, habe aber die jboss_web.xml ausgelassen. Noch funktioniert alles, aber ich wüsste gerne wo der Fehler liegt.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-9234">
+        <div id="dsq-comment-header-9234" class="dsq-comment-header">
+            <cite id="dsq-cite-9234">
+                <span id="dsq-author-user-9234">d.v.</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-9234" class="dsq-comment-body">
+            <div id="dsq-comment-message-9234" class="dsq-comment-message"><p>Ich hatte Schwierigkeiten bei der SSL Konfiguration meines WildFly 8.2 Die Anpassungen auf Seite 260 waren nicht ganz korrekt angegeben. Der https-listener muss an folgender Stelle eingetragen werden:</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-2" id="dsq-comment-11296">
+        <div id="dsq-comment-header-11296" class="dsq-comment-header">
+            <cite id="dsq-cite-11296">
+                <span id="dsq-author-user-11296">FS</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-11296" class="dsq-comment-body">
+            <div id="dsq-comment-message-11296" class="dsq-comment-message"><p>Ich bin ebenfalls an dieser Stelle hängen geblieben und nach Änderungen in der standalone.xml gemäß Buch hat sich der JBOSS Server nicht mehr starten lassen.</p>
+<p>Nach Änderungen gemäß folgenden Link konnte der Server wieder gestartet werden und https war funktionsfähig:<br />
+<a href="http://reallifejava.com/configuring-ssl-in-wildfly-8/" rel="nofollow">http://reallifejava.com/configuring-ssl-in-wildfly-8/</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-10637">
+        <div id="dsq-comment-header-10637" class="dsq-comment-header">
+            <cite id="dsq-cite-10637">
+                <span id="dsq-author-user-10637">Christoph</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-10637" class="dsq-comment-body">
+            <div id="dsq-comment-message-10637" class="dsq-comment-message"><p>Hallo,</p>
+<p>das buch ist super. Die Erklärungen sind gut und das Beispiel hilft gut die Themen zu verstehen.</p>
+<p>Die Rest Services bekomme ich aber nicht zum laufen. Ich hatte bereits Tutorials mit JAX-RS mit einem Tomcat Server laufen und da hatte geklappt. Das Mapping scheint bei mir absolut ignoriert zu werden.<br />
+Im web.xml habe ich das servlet mapping:</p>
+<p>    javax.ws.rs.core.Application<br />
+    /rest/*</p>
+<p>  &#8230;</p>
+<p>   &#8230;</p>
+<p> 	Zugriff Organisator via REST<br />
+  		/rest/organizer/*  	</p>
+<p>&#8230;<br />
+Wenn ich die Aufrufe zum Erzeugen des Cookies durchführe und anschließend:<br />
+curl -k -b cookie.txt <a href="http://localhost:8080/my-aktion/rest/organizer/campaign/list" rel="nofollow">http://localhost:8080/my-aktion/rest/organizer/campaign/list</a><br />
+Dann erhalte ich nur die Rückmeldung dass die Seite nicht existiert (404- Not Found).</p>
+<p>Wie kann ich diesen Fehler eingrenzen?<br />
+Ich habe gesehen, dass das pom.xml im zugehörigen github anders aussieht. Das bezieht sich aber anscheinend auch noch nicht auf wildfly. Im Buch wird JAX-RS auch gar nicht explizit ins pom.xml mit aufgenommen.</p>
+<p>Für jeden Hinweis bin ich dankbar.<br />
+Grüße,<br />
+Christoph</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-10718">
+        <div id="dsq-comment-header-10718" class="dsq-comment-header">
+            <cite id="dsq-cite-10718">
+                <span id="dsq-author-user-10718">Thomas Hermann</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-10718" class="dsq-comment-body">
+            <div id="dsq-comment-message-10718" class="dsq-comment-message"><p>Hallo,<br />
+ich versuche anstatt der JBoss DB eine Oracle Datenbank zu benutzen. Ich möchte den Oracle ojdbc benutzen. Ich bekomme einfach keine persistance.xml hin die funktioniert. Was muß man da beachten?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-10872">
+        <div id="dsq-comment-header-10872" class="dsq-comment-header">
+            <cite id="dsq-cite-10872">
+                <span id="dsq-author-user-10872">Volker</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-10872" class="dsq-comment-body">
+            <div id="dsq-comment-message-10872" class="dsq-comment-message"><p>Hallo,<br />
+leider laufen die Arquillian Test nicht. Ich bekomme diese Exception.<br />
+Pom ist wie im Buch angepasst.</p>
+<p>Nov 19, 2015 3:41:17 PM org.jboss.arquillian.drone.webdriver.factory.remote.reusable.ReusedSessionPermanentFileStorage readStore<br />
+INFORMATION: Reused session store is not available at C:\Users\dfo\.drone-webdriver-session-store, a new one will be created.</p>
+<p>Grüße<br />
+Volker</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-11119">
+        <div id="dsq-comment-header-11119" class="dsq-comment-header">
+            <cite id="dsq-cite-11119">
+                <span id="dsq-author-user-11119">Jan Tack</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-11119" class="dsq-comment-body">
+            <div id="dsq-comment-message-11119" class="dsq-comment-message"><p>Funktioniert bei jemandem der Test aus Abschnitt 8.2.8 (2. Auflage des Buches, Seite 264f)? </p>
+<p>Weil bei mir die Tests immer wieder scheiterten, habe ich mir den JPA- und den EJB-Trunk aus dem Git-Hub gezogen und in beiden den Testbrowser jeweils von &#8220;firefox&#8221; auf &#8220;phantomjs&#8221; umgestellt. </p>
+<p>Beim JPA-Trunk, der den Zustand nach Kapitel 7 wiederspiegelt laufen die Tests fehlerfrei. Anders beim EJB-Trunk, der dem Stand nach Kapitel 8 entspricht. Hier enden die Tests mit einer &#8220;NoSuchElementException&#8221;. </p>
+<p>Die Details in der Fehlermeldung deuten darauf hin, das etwas mit dem Login-Vorgang nicht stimmt: </p>
+<p>Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.841 sec &lt;&lt;&lt; FAILURE! &#8211; in de.dpunkt.myaktion.test.DonateMoneyITCase<br />
+testDonateMoney(de.dpunkt.myaktion.test.DonateMoneyITCase)  Time elapsed: 3.444 sec  &lt;&lt;&lt; ERROR!<br />
+org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with xpath &#039;//button/span[text()=&#039;Aktion hinzufügen&#039;]&#039;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept&quot;:&quot;application/json, image/png&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;70&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:5418&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\&quot;using\&quot;:\&quot;xpath\&quot;,\&quot;value\&quot;:\&quot;//button/span[text()=&#039;Aktion hinzufügen&#039;]\&quot;}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/ecca7470-a6e9-11e5-b86f-d93f15376398/element&quot;}}</p>
+<p>Ein kurze Rückmeldung, ob andere das gleiche Problem haben wäre schon hilfreich. Danke!</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-11120">
+        <div id="dsq-comment-header-11120" class="dsq-comment-header">
+            <cite id="dsq-cite-11120">
+                <span id="dsq-author-user-11120">Jan Tack</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-11120" class="dsq-comment-body">
+            <div id="dsq-comment-message-11120" class="dsq-comment-message"><p>Korrektur: Dort wo Trunk steht, war Branch geweint, Sorry</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-12274">
+        <div id="dsq-comment-header-12274" class="dsq-comment-header">
+            <cite id="dsq-cite-12274">
+                <span id="dsq-author-user-12274">Michael Nowak</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-12274" class="dsq-comment-body">
+            <div id="dsq-comment-message-12274" class="dsq-comment-message"><p>Bei wird beim Listing 4-16 die Inhalte der Beans mittels Expression Language nicht übernommen. Ich nutze NetBeans 8.1, GlassFish 4.1 und JSF 3.1 . Kann mir bitte jemand auf die Sprünge helfen? In den einschlägigen Foren habe ich keine befriedigende Antwort gefunden.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-12403">
+        <div id="dsq-comment-header-12403" class="dsq-comment-header">
+            <cite id="dsq-cite-12403">
+                <span id="dsq-author-user-12403">Bernd</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-12403" class="dsq-comment-body">
+            <div id="dsq-comment-message-12403" class="dsq-comment-message"><p>Kann Projekt (Stand S.82) nicht deployen.<br />
+Meine pom.xml:</p>
+<p>    4.0.0<br />
+    de.dpunkt<br />
+    my-aktion<br />
+    1.0-SNAPSHOT<br />
+    war</p>
+<p>            javax<br />
+            javaee-api<br />
+            7.0<br />
+            provided</p>
+<p>        my-aktion</p>
+<p>		      org.wildfly.plugins<br />
+			  wildfly-maven-plugin<br />
+			  1.0.1.Final</p>
+<p>        1.8<br />
+        1.8<br />
+        false<br />
+		UTF-8</p>
+<p>Bei Eingabe von mvn package wildfly:deploy bekomme ich folgende Meldung:</p>
+<p>[INFO] BUILD FAILURE<br />
+&#8230;<br />
+[ERROR] Failed to execute goal org.wildfly.plugins:wildfly-maven-plugin:1.0.1.Final:deploy (default-cli) on project my-aktion: Deployment failed and was rolled back. -&gt; [Help 1]<br />
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.wildfly.plugins:wildfly-maven-plugin:1.0.1.Final:deploy (default-cli) on project my-aktion: Deployment failed and was rolled back.<br />
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)<br />
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)<br />
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)<br />
+usw.</p>
+<p>Woran kann das liegen?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-12404">
+        <div id="dsq-comment-header-12404" class="dsq-comment-header">
+            <cite id="dsq-cite-12404">
+                <span id="dsq-author-user-12404">Bernd</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-12404" class="dsq-comment-body">
+            <div id="dsq-comment-message-12404" class="dsq-comment-message"><p>[Info: Die Tags in der pom.xml werden oben nicht angezeigt, sind aber vorhanden.]</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+
+	</div><!-- #main -->
+
+	<footer id="colophon" role="contentinfo">
+
+			
+
+			<div id="site-generator">
+								<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+			</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://www.javaee7.de/wp-includes/js/comment-reply.min.js?ver=4.3.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"platform":"wordpress@4.3.1","language":""},"disqusIdentifier":"40 http:\/\/www.javaee7.de\/?page_id=40","disqusShortname":"javaee7","disqusTitle":"FAQ","disqusUrl":"http:\/\/www.javaee7.de\/faq\/","options":{"manualSync":false},"postId":"40"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.javaee7.de/wp-content/plugins/disqus-comment-system/media/js/disqus.js?ver=4.3.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"javaee7"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.javaee7.de/wp-content/plugins/disqus-comment-system/media/js/count.js?ver=4.3.1'></script>
+
+</body>
+</html>

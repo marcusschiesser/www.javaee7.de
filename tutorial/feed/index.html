@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Das Buch</title>
+	<atom:link href="http://javaee7.de/tutorial/feed/" rel="self" type="application/rss+xml" />
+	<link>http://javaee7.de</link>
+	<description>Informationen über die neue Java Enterprise Version</description>
+	<lastBuildDate>Tue, 14 Jun 2016 13:32:10 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>By: Steffen Schliwinski</title>
+		<link>http://javaee7.de/tutorial/#comment-11812</link>
+		<dc:creator><![CDATA[Steffen Schliwinski]]></dc:creator>
+		<pubDate>Thu, 24 Mar 2016 08:36:28 +0000</pubDate>
+		<guid isPermaLink="false">http://javaee7.marcusschiesser.de/?page_id=66#comment-11812</guid>
+		<description><![CDATA[Sehr geehrter Hr. Schiesser, sehr geehrter Hr. Schmollinger,
+
+ich habe ein Problem beim Testen der REST-Services mit curl. Ich mache die 2 curl-Aufrufe von Seite 300 und erhalte bei der 1. Anweisung auch den Quellcode der Anmeldeseite. Die 2. Anweisung erzeugt keine Ausgabe. Ein erneuter Aufruf der /rest/organizer/campaign/list-Ressource liefert dann jedoch leider keine JSON-Liste sondern wiederum den Anmeldeseite-Quellcode. Ich habe den Originalstand aus Ihrem GIT-Repository deployt. Eine kleine Änderung musste ich in der web.xml machen: Ich habe  auskommentiert, da ich sonst (warum auch immer) beim Aufruf der Anwendung folgende Exception erhalten habe:
+
+08:28:45,008 ERROR [org.xnio.listener] (default I/O-3) XNIO001007: A channel event listener threw an exception: java.lang.NullPointerException
+	at org.xnio.ssl.AbstractAcceptingSslChannel.accept(AbstractAcceptingSslChannel.java:145) [xnio-api-3.2.2.Final.jar:3.2.2.Final]
+	at org.xnio.ChannelListeners$10.handleEvent(ChannelListeners.java:289) [xnio-api-3.2.2.Final.jar:3.2.2.Final]
+	at org.xnio.ChannelListeners$10.handleEvent(ChannelListeners.java:286) [xnio-api-3.2.2.Final.jar:3.2.2.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.2.2.Final.jar:3.2.2.Final]
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.2.2.Final.jar:3.2.2.Final]
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.2.2.Final.jar:3.2.2.Final]
+	at org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:53) [xnio-nio-3.2.2.Final.jar:3.2.2.Final]
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539) [xnio-nio-3.2.2.Final.jar:3.2.2.Final]
+	
+Haben Sie eine Idee, weshalb die curl-Anweisungen fehlschlagen? Bin ein wenig ratlos...
+
+Frohe Ostern und viele Grüße aus Heilbronn,
+Steffen Schliwinski]]></description>
+		<content:encoded><![CDATA[<p>Sehr geehrter Hr. Schiesser, sehr geehrter Hr. Schmollinger,</p>
+<p>ich habe ein Problem beim Testen der REST-Services mit curl. Ich mache die 2 curl-Aufrufe von Seite 300 und erhalte bei der 1. Anweisung auch den Quellcode der Anmeldeseite. Die 2. Anweisung erzeugt keine Ausgabe. Ein erneuter Aufruf der /rest/organizer/campaign/list-Ressource liefert dann jedoch leider keine JSON-Liste sondern wiederum den Anmeldeseite-Quellcode. Ich habe den Originalstand aus Ihrem GIT-Repository deployt. Eine kleine Änderung musste ich in der web.xml machen: Ich habe  auskommentiert, da ich sonst (warum auch immer) beim Aufruf der Anwendung folgende Exception erhalten habe:</p>
+<p>08:28:45,008 ERROR [org.xnio.listener] (default I/O-3) XNIO001007: A channel event listener threw an exception: java.lang.NullPointerException<br />
+	at org.xnio.ssl.AbstractAcceptingSslChannel.accept(AbstractAcceptingSslChannel.java:145) [xnio-api-3.2.2.Final.jar:3.2.2.Final]<br />
+	at org.xnio.ChannelListeners$10.handleEvent(ChannelListeners.java:289) [xnio-api-3.2.2.Final.jar:3.2.2.Final]<br />
+	at org.xnio.ChannelListeners$10.handleEvent(ChannelListeners.java:286) [xnio-api-3.2.2.Final.jar:3.2.2.Final]<br />
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.2.2.Final.jar:3.2.2.Final]<br />
+	at org.xnio.ChannelListeners$DelegatingChannelListener.handleEvent(ChannelListeners.java:1092) [xnio-api-3.2.2.Final.jar:3.2.2.Final]<br />
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92) [xnio-api-3.2.2.Final.jar:3.2.2.Final]<br />
+	at org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:53) [xnio-nio-3.2.2.Final.jar:3.2.2.Final]<br />
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:539) [xnio-nio-3.2.2.Final.jar:3.2.2.Final]</p>
+<p>Haben Sie eine Idee, weshalb die curl-Anweisungen fehlschlagen? Bin ein wenig ratlos&#8230;</p>
+<p>Frohe Ostern und viele Grüße aus Heilbronn,<br />
+Steffen Schliwinski</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

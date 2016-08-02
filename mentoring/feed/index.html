@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Mentoring</title>
+	<atom:link href="http://javaee7.de/mentoring/feed/" rel="self" type="application/rss+xml" />
+	<link>http://javaee7.de</link>
+	<description>Informationen über die neue Java Enterprise Version</description>
+	<lastBuildDate>Tue, 14 Jun 2016 13:32:10 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>By: Jan Tack</title>
+		<link>http://javaee7.de/mentoring/#comment-11092</link>
+		<dc:creator><![CDATA[Jan Tack]]></dc:creator>
+		<pubDate>Fri, 18 Dec 2015 06:24:20 +0000</pubDate>
+		<guid isPermaLink="false">http://javaee7.marcusschiesser.de/?page_id=49#comment-11092</guid>
+		<description><![CDATA[Mein Fehler war, dass ich den Build- und Deploymentprozess über die IDE (Netbeans) angestoßen habe, und nicht über die Kommandozeile. Damit das ganze unter Netbeans klappte, musste ich die standalone-full.xml statt der standalone.xml wie auf Seite 250f beschrieben bearbeiten. Danach funktionierte alles reibungslos.]]></description>
+		<content:encoded><![CDATA[<p>Mein Fehler war, dass ich den Build- und Deploymentprozess über die IDE (Netbeans) angestoßen habe, und nicht über die Kommandozeile. Damit das ganze unter Netbeans klappte, musste ich die standalone-full.xml statt der standalone.xml wie auf Seite 250f beschrieben bearbeiten. Danach funktionierte alles reibungslos.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jan Tack</title>
+		<link>http://javaee7.de/mentoring/#comment-11086</link>
+		<dc:creator><![CDATA[Jan Tack]]></dc:creator>
+		<pubDate>Thu, 17 Dec 2015 15:57:26 +0000</pubDate>
+		<guid isPermaLink="false">http://javaee7.marcusschiesser.de/?page_id=49#comment-11086</guid>
+		<description><![CDATA[Nach Abschnitt 8.2.3 funktioniert bei mir das Deployment nicht mehr und bricht stehts mit folgender Fehlermeldung ab:
+
+Initial deploying my-aktion to /home/jan/pro/wildfly/wildfly-9.0.2.Final/standalone/deployments/my-aktion.war
+Completed initial distribution of my-aktion
+Deploying /home/jan/pro/wildfly/wildfly-9.0.2.Final/standalone/deployments/my-aktion.war
+{&quot;WFLYCTL0180: Services with missing/unavailable dependencies&quot; =&#062; [
+    &quot;jboss.deployment.unit.\&quot;my-aktion.war\&quot;.component.DonationServiceBean.CREATE is missing [jboss.security.security-domain.my-aktion]&quot;,
+    &quot;jboss.undertow.deployment.default-server.default-host./my-aktion.UndertowDeploymentInfoService is missing [jboss.security.security-domain.my-aktion]&quot;,
+    &quot;jboss.deployment.unit.\&quot;my-aktion.war\&quot;.component.CampaignServiceBean.CREATE is missing [jboss.security.security-domain.my-aktion]&quot;
+]}
+
+Der Fehler tritt auch auf, wenn ich es mit der finalen Git-Hub-Version von my-aktion versuche. 
+
+Ich dachte zunächst, es liegt daran, das ich eine neuere Version von Wildfly benutze, aber das Problem scheint auch bei anderen auf zu treten, die die Version 8 verwenden: 
+
+http://stackoverflow.com/questions/28578967/deployment-error-when-defining-a-security-domain]]></description>
+		<content:encoded><![CDATA[<p>Nach Abschnitt 8.2.3 funktioniert bei mir das Deployment nicht mehr und bricht stehts mit folgender Fehlermeldung ab:</p>
+<p>Initial deploying my-aktion to /home/jan/pro/wildfly/wildfly-9.0.2.Final/standalone/deployments/my-aktion.war<br />
+Completed initial distribution of my-aktion<br />
+Deploying /home/jan/pro/wildfly/wildfly-9.0.2.Final/standalone/deployments/my-aktion.war<br />
+{&#8220;WFLYCTL0180: Services with missing/unavailable dependencies&#8221; =&gt; [<br />
+    &#8220;jboss.deployment.unit.\&#8221;my-aktion.war\&#8221;.component.DonationServiceBean.CREATE is missing [jboss.security.security-domain.my-aktion]&#8221;,<br />
+    &#8220;jboss.undertow.deployment.default-server.default-host./my-aktion.UndertowDeploymentInfoService is missing [jboss.security.security-domain.my-aktion]&#8221;,<br />
+    &#8220;jboss.deployment.unit.\&#8221;my-aktion.war\&#8221;.component.CampaignServiceBean.CREATE is missing [jboss.security.security-domain.my-aktion]&#8221;<br />
+]}</p>
+<p>Der Fehler tritt auch auf, wenn ich es mit der finalen Git-Hub-Version von my-aktion versuche. </p>
+<p>Ich dachte zunächst, es liegt daran, das ich eine neuere Version von Wildfly benutze, aber das Problem scheint auch bei anderen auf zu treten, die die Version 8 verwenden: </p>
+<p><a href="http://stackoverflow.com/questions/28578967/deployment-error-when-defining-a-security-domain" rel="nofollow">http://stackoverflow.com/questions/28578967/deployment-error-when-defining-a-security-domain</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Name</title>
+		<link>http://javaee7.de/mentoring/#comment-1597</link>
+		<dc:creator><![CDATA[Name]]></dc:creator>
+		<pubDate>Tue, 26 Aug 2014 16:10:50 +0000</pubDate>
+		<guid isPermaLink="false">http://javaee7.marcusschiesser.de/?page_id=49#comment-1597</guid>
+		<description><![CDATA[Ich studiere zurzeit Informatik. Habe mir ihr Buch zugelegt. Wie im Buch benutze ich Jboss AS Final 7.1 und das Maven. Den Archtype verwende ich auch. Aber wenn ich nachdem Buch programmiere kriege ich ständig Fehlermeldungen. Die Aktion/Aktion Monitor hab ich im Internet auf Git-hub gefunden. Auch da hab ich ein paar Fehler bekommen. Z.b. 
+javax.servlet.ServletException: WELD-000049 Unable to invoke [method] @PostConstruct public de.dpunkt.myaktion.data.AktionListProducer.init() on de.dpunkt.myaktion.data.AktionListProducer@bfcbdb
+	javax.faces.webapp.FacesServlet.service(FacesServlet.java:606)
+	org.jboss.weld.servlet.ConversationPropagationFilter.doFilter(ConversationPropagationFilter.java:62)
+
+root cause 
+
+Hab ich vielleicht die falsche Version gefunden? Oder hab ich die falsch implementiert? Oder gibt es eine fehlerfreie Version.
+mfg Sebastian]]></description>
+		<content:encoded><![CDATA[<p>Ich studiere zurzeit Informatik. Habe mir ihr Buch zugelegt. Wie im Buch benutze ich Jboss AS Final 7.1 und das Maven. Den Archtype verwende ich auch. Aber wenn ich nachdem Buch programmiere kriege ich ständig Fehlermeldungen. Die Aktion/Aktion Monitor hab ich im Internet auf Git-hub gefunden. Auch da hab ich ein paar Fehler bekommen. Z.b.<br />
+javax.servlet.ServletException: WELD-000049 Unable to invoke [method] @PostConstruct public de.dpunkt.myaktion.data.AktionListProducer.init() on de.dpunkt.myaktion.data.AktionListProducer@bfcbdb<br />
+	javax.faces.webapp.FacesServlet.service(FacesServlet.java:606)<br />
+	org.jboss.weld.servlet.ConversationPropagationFilter.doFilter(ConversationPropagationFilter.java:62)</p>
+<p>root cause </p>
+<p>Hab ich vielleicht die falsche Version gefunden? Oder hab ich die falsch implementiert? Oder gibt es eine fehlerfreie Version.<br />
+mfg Sebastian</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Java EE 7 Projekt mit aktuellem Maven-Archtype aufsetzen</title>
+	<atom:link href="http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/feed/" rel="self" type="application/rss+xml" />
+	<link>http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/</link>
+	<description>Informationen über die neue Java Enterprise Version</description>
+	<lastBuildDate>Tue, 14 Jun 2016 13:32:10 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>By: René</title>
+		<link>http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/#comment-8156</link>
+		<dc:creator><![CDATA[René]]></dc:creator>
+		<pubDate>Fri, 09 Jan 2015 12:24:04 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?p=24#comment-8156</guid>
+		<description><![CDATA[Bei mir hatte sich ein Tippfehler eingeschlichen der diesen Fehler verursacht hat.
+Bei 
+-DarchetypeGroupId=org.jboss.spec.archetypes 
+hatte ich das s bei archetypes am ende vergessen. Schaut nach ob ihr alles richtig geschrieben habt.]]></description>
+		<content:encoded><![CDATA[<p>Bei mir hatte sich ein Tippfehler eingeschlichen der diesen Fehler verursacht hat.<br />
+Bei<br />
+-DarchetypeGroupId=org.jboss.spec.archetypes<br />
+hatte ich das s bei archetypes am ende vergessen. Schaut nach ob ihr alles richtig geschrieben habt.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: ki</title>
+		<link>http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/#comment-676</link>
+		<dc:creator><![CDATA[ki]]></dc:creator>
+		<pubDate>Sun, 20 Apr 2014 12:41:20 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?p=24#comment-676</guid>
+		<description><![CDATA[Anhand der Fehlermeldung ist ersichtlich, dass der Archetpye im falschen Gruppenverzeichnis gesucht wird. Vermutlich hat sich in die Angabe der artifactGroupId ein Typo eingeschlichen.
+
+Um mühseliges Abtippen und Vergleichen abzukürzen poste ich einmal den entsprechen Aufruf, der z.B. mit einem frischen mvn 3.0.5 unter Ubuntu 12.4 funktioniert:
+
+mvn archetype:generate \
+	-DarchetypeArtifactId=jboss-javaee6-webapp-blank-archetype \
+	-DarchetypeGroupId=org.jboss.spec.archetypes \
+	-DarchetypeVersion=7.1.1.Final \]]></description>
+		<content:encoded><![CDATA[<p>Anhand der Fehlermeldung ist ersichtlich, dass der Archetpye im falschen Gruppenverzeichnis gesucht wird. Vermutlich hat sich in die Angabe der artifactGroupId ein Typo eingeschlichen.</p>
+<p>Um mühseliges Abtippen und Vergleichen abzukürzen poste ich einmal den entsprechen Aufruf, der z.B. mit einem frischen mvn 3.0.5 unter Ubuntu 12.4 funktioniert:</p>
+<p>mvn archetype:generate \<br />
+	-DarchetypeArtifactId=jboss-javaee6-webapp-blank-archetype \<br />
+	-DarchetypeGroupId=org.jboss.spec.archetypes \<br />
+	-DarchetypeVersion=7.1.1.Final \</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marcus Schiesser</title>
+		<link>http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/#comment-224</link>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+		<pubDate>Mon, 24 Feb 2014 14:05:43 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?p=24#comment-224</guid>
+		<description><![CDATA[Danke für den Hinweis. Beachten Sie allerdings, dass dieser Archetype für das Projekt my-aktion-monitor und nicht für das Projekt my-aktion verwendet werden soll. Für das Projekt my-aktion-monitor wird diese Änderung im Buch beschrieben.]]></description>
+		<content:encoded><![CDATA[<p>Danke für den Hinweis. Beachten Sie allerdings, dass dieser Archetype für das Projekt my-aktion-monitor und nicht für das Projekt my-aktion verwendet werden soll. Für das Projekt my-aktion-monitor wird diese Änderung im Buch beschrieben.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marcus Schiesser</title>
+		<link>http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/#comment-222</link>
+		<dc:creator><![CDATA[Marcus Schiesser]]></dc:creator>
+		<pubDate>Mon, 24 Feb 2014 09:28:01 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?p=24#comment-222</guid>
+		<description><![CDATA[Es tut uns leid, aber wir koennen nicht alle moeglichen Konfigurationen testen. Die im Buch verwendete funktioniert, wie auch andere Leser bestaetigen.]]></description>
+		<content:encoded><![CDATA[<p>Es tut uns leid, aber wir koennen nicht alle moeglichen Konfigurationen testen. Die im Buch verwendete funktioniert, wie auch andere Leser bestaetigen.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michél Henkel</title>
+		<link>http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/#comment-199</link>
+		<dc:creator><![CDATA[Michél Henkel]]></dc:creator>
+		<pubDate>Sat, 25 Jan 2014 11:31:09 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?p=24#comment-199</guid>
+		<description><![CDATA[Hallo.
+
+Ich habe wie auf Seite 25 beschrieben erfolgreich das Webarchiv auf dem JBoss Appilkations-Server deployed. (Mir wurde eine Erfolgsmeldung in der Windows Eingabeaufforderrung ausgegeben.)
+
+Wen ich jetzt allerdings folgende URL aufrufe, findet Firefox keine Seite.
+
+http://localhost:8080/my-aktion/index.jsf.
+
+Auch mit index.xhtml wurde nichts gefunden. Woran liegt das?]]></description>
+		<content:encoded><![CDATA[<p>Hallo.</p>
+<p>Ich habe wie auf Seite 25 beschrieben erfolgreich das Webarchiv auf dem JBoss Appilkations-Server deployed. (Mir wurde eine Erfolgsmeldung in der Windows Eingabeaufforderrung ausgegeben.)</p>
+<p>Wen ich jetzt allerdings folgende URL aufrufe, findet Firefox keine Seite.</p>
+<p><a href="http://localhost:8080/my-aktion/index.jsf" rel="nofollow">http://localhost:8080/my-aktion/index.jsf</a>.</p>
+<p>Auch mit index.xhtml wurde nichts gefunden. Woran liegt das?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Semi</title>
+		<link>http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/#comment-196</link>
+		<dc:creator><![CDATA[Semi]]></dc:creator>
+		<pubDate>Fri, 24 Jan 2014 22:37:44 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?p=24#comment-196</guid>
+		<description><![CDATA[Finde das schon eine Frechheit, dass das Problem weiterhin noch besteht, und vom Verfasser keine Lösung angeboten wird???]]></description>
+		<content:encoded><![CDATA[<p>Finde das schon eine Frechheit, dass das Problem weiterhin noch besteht, und vom Verfasser keine Lösung angeboten wird???</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Niels</title>
+		<link>http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/#comment-16</link>
+		<dc:creator><![CDATA[Niels]]></dc:creator>
+		<pubDate>Sun, 22 Dec 2013 07:41:05 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?p=24#comment-16</guid>
+		<description><![CDATA[Ach ja: Vergesst nicht, mit &quot;mvn clean&quot; das target-Verzeichnis aufzuräumen, sonst lauft Ihr auf einen Fehler.]]></description>
+		<content:encoded><![CDATA[<p>Ach ja: Vergesst nicht, mit &#8220;mvn clean&#8221; das target-Verzeichnis aufzuräumen, sonst lauft Ihr auf einen Fehler.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Niels</title>
+		<link>http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/#comment-15</link>
+		<dc:creator><![CDATA[Niels]]></dc:creator>
+		<pubDate>Sun, 22 Dec 2013 07:39:47 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?p=24#comment-15</guid>
+		<description><![CDATA[Moin!
+
+Hinweis für alle IntelliJ Benutzer: 
+Wenn Ihr das JBoss-Plugin verwendet und in der Run Configuration immer die Fehlermeldung &quot;Error: Artifact &#039;my-aktion:war exploded&#039; has invalid extension&quot; erhaltet, müsst Ihr in &quot;Project Structure&quot; -&#062; &quot;Artifacts&quot; -&#062; &quot;my-aktion:war exploded&quot; als &quot;Output directory&quot; --&#062; &quot;.../my-aktion.war&quot; als Verzeichnis eingeben.]]></description>
+		<content:encoded><![CDATA[<p>Moin!</p>
+<p>Hinweis für alle IntelliJ Benutzer:<br />
+Wenn Ihr das JBoss-Plugin verwendet und in der Run Configuration immer die Fehlermeldung &#8220;Error: Artifact &#8216;my-aktion:war exploded&#8217; has invalid extension&#8221; erhaltet, müsst Ihr in &#8220;Project Structure&#8221; -&gt; &#8220;Artifacts&#8221; -&gt; &#8220;my-aktion:war exploded&#8221; als &#8220;Output directory&#8221; &#8211;&gt; &#8220;&#8230;/my-aktion.war&#8221; als Verzeichnis eingeben.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Niels</title>
+		<link>http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/#comment-14</link>
+		<dc:creator><![CDATA[Niels]]></dc:creator>
+		<pubDate>Sun, 22 Dec 2013 07:34:21 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?p=24#comment-14</guid>
+		<description><![CDATA[Moin!
+
+Wenn ich mit dem Maven Architype webapp-javaee7 das Projekt baue und deploye, wird die Seite nicht unter .../my-aktion/index.jsf gefunden (HTTP/404), sondern unter .../my-aktion-1.0-SNAPSHOT/index.xhtml
+
+Behoben habe ich das Problem dadurch, dass ich in der pom.xml unter /pom:project/pom:build/pom:finalName    &quot;my-aktion&quot;   eingetragen habe:
+...
+    
+        my-aktion
+    ....
+    ]]></description>
+		<content:encoded><![CDATA[<p>Moin!</p>
+<p>Wenn ich mit dem Maven Architype webapp-javaee7 das Projekt baue und deploye, wird die Seite nicht unter &#8230;/my-aktion/index.jsf gefunden (HTTP/404), sondern unter &#8230;/my-aktion-1.0-SNAPSHOT/index.xhtml</p>
+<p>Behoben habe ich das Problem dadurch, dass ich in der pom.xml unter /pom:project/pom:build/pom:finalName    &#8220;my-aktion&#8221;   eingetragen habe:<br />
+&#8230;</p>
+<p>        my-aktion<br />
+    &#8230;.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jörg</title>
+		<link>http://javaee7.de/2013/09/java-ee-7-projekt-mit-aktuellem-maven-archtype-aufsetzen/#comment-13</link>
+		<dc:creator><![CDATA[Jörg]]></dc:creator>
+		<pubDate>Sat, 14 Dec 2013 13:34:53 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?p=24#comment-13</guid>
+		<description><![CDATA[Hallo Freunde,
+ich arbeite mit Ubuntu und maven wie auf Seite 24 beschreiben laufen lassen. Es gab keine Fehler. 
+Viele Grüße
+Jörg]]></description>
+		<content:encoded><![CDATA[<p>Hallo Freunde,<br />
+ich arbeite mit Ubuntu und maven wie auf Seite 24 beschreiben laufen lassen. Es gab keine Fehler.<br />
+Viele Grüße<br />
+Jörg</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

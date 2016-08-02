@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: FAQ</title>
+	<atom:link href="http://javaee7.de/faq/feed/" rel="self" type="application/rss+xml" />
+	<link>http://javaee7.de</link>
+	<description>Informationen über die neue Java Enterprise Version</description>
+	<lastBuildDate>Tue, 14 Jun 2016 13:32:10 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>By: Bernd</title>
+		<link>http://javaee7.de/faq/#comment-12404</link>
+		<dc:creator><![CDATA[Bernd]]></dc:creator>
+		<pubDate>Tue, 14 Jun 2016 13:32:10 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?page_id=40#comment-12404</guid>
+		<description><![CDATA[[Info: Die Tags in der pom.xml werden oben nicht angezeigt, sind aber vorhanden.]]]></description>
+		<content:encoded><![CDATA[<p>[Info: Die Tags in der pom.xml werden oben nicht angezeigt, sind aber vorhanden.]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Bernd</title>
+		<link>http://javaee7.de/faq/#comment-12403</link>
+		<dc:creator><![CDATA[Bernd]]></dc:creator>
+		<pubDate>Tue, 14 Jun 2016 13:30:15 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?page_id=40#comment-12403</guid>
+		<description><![CDATA[Kann Projekt (Stand S.82) nicht deployen.
+Meine pom.xml:
+
+
+    4.0.0
+    de.dpunkt
+    my-aktion
+    1.0-SNAPSHOT
+    war
+    
+        
+            javax
+            javaee-api
+            7.0
+            provided
+        
+    
+    
+        my-aktion
+		
+		   
+		      org.wildfly.plugins
+			  wildfly-maven-plugin
+			  1.0.1.Final
+		   
+		   
+    
+    
+        1.8
+        1.8
+        false
+		UTF-8
+    
+
+
+Bei Eingabe von mvn package wildfly:deploy bekomme ich folgende Meldung:
+
+[INFO] BUILD FAILURE
+...
+[ERROR] Failed to execute goal org.wildfly.plugins:wildfly-maven-plugin:1.0.1.Final:deploy (default-cli) on project my-aktion: Deployment failed and was rolled back. -&#062; [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.wildfly.plugins:wildfly-maven-plugin:1.0.1.Final:deploy (default-cli) on project my-aktion: Deployment failed and was rolled back.
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+usw.
+
+Woran kann das liegen?]]></description>
+		<content:encoded><![CDATA[<p>Kann Projekt (Stand S.82) nicht deployen.<br />
+Meine pom.xml:</p>
+<p>    4.0.0<br />
+    de.dpunkt<br />
+    my-aktion<br />
+    1.0-SNAPSHOT<br />
+    war</p>
+<p>            javax<br />
+            javaee-api<br />
+            7.0<br />
+            provided</p>
+<p>        my-aktion</p>
+<p>		      org.wildfly.plugins<br />
+			  wildfly-maven-plugin<br />
+			  1.0.1.Final</p>
+<p>        1.8<br />
+        1.8<br />
+        false<br />
+		UTF-8</p>
+<p>Bei Eingabe von mvn package wildfly:deploy bekomme ich folgende Meldung:</p>
+<p>[INFO] BUILD FAILURE<br />
+&#8230;<br />
+[ERROR] Failed to execute goal org.wildfly.plugins:wildfly-maven-plugin:1.0.1.Final:deploy (default-cli) on project my-aktion: Deployment failed and was rolled back. -&gt; [Help 1]<br />
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.wildfly.plugins:wildfly-maven-plugin:1.0.1.Final:deploy (default-cli) on project my-aktion: Deployment failed and was rolled back.<br />
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)<br />
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)<br />
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)<br />
+usw.</p>
+<p>Woran kann das liegen?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michael Nowak</title>
+		<link>http://javaee7.de/faq/#comment-12274</link>
+		<dc:creator><![CDATA[Michael Nowak]]></dc:creator>
+		<pubDate>Wed, 25 May 2016 11:31:43 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?page_id=40#comment-12274</guid>
+		<description><![CDATA[Bei wird beim Listing 4-16 die Inhalte der Beans mittels Expression Language nicht übernommen. Ich nutze NetBeans 8.1, GlassFish 4.1 und JSF 3.1 . Kann mir bitte jemand auf die Sprünge helfen? In den einschlägigen Foren habe ich keine befriedigende Antwort gefunden.]]></description>
+		<content:encoded><![CDATA[<p>Bei wird beim Listing 4-16 die Inhalte der Beans mittels Expression Language nicht übernommen. Ich nutze NetBeans 8.1, GlassFish 4.1 und JSF 3.1 . Kann mir bitte jemand auf die Sprünge helfen? In den einschlägigen Foren habe ich keine befriedigende Antwort gefunden.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Andreas</title>
+		<link>http://javaee7.de/faq/#comment-11884</link>
+		<dc:creator><![CDATA[Andreas]]></dc:creator>
+		<pubDate>Thu, 07 Apr 2016 21:00:10 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?page_id=40#comment-11884</guid>
+		<description><![CDATA[Gleiches Problem: Habe für das erste Beispiel auf eine IDE verzichtet und erhalte die Fehlermeldung &quot;not found&quot; wenn ich index.jsf angebe. Was läuft da schief?]]></description>
+		<content:encoded><![CDATA[<p>Gleiches Problem: Habe für das erste Beispiel auf eine IDE verzichtet und erhalte die Fehlermeldung &#8220;not found&#8221; wenn ich index.jsf angebe. Was läuft da schief?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michael</title>
+		<link>http://javaee7.de/faq/#comment-11752</link>
+		<dc:creator><![CDATA[Michael]]></dc:creator>
+		<pubDate>Mon, 14 Mar 2016 20:05:10 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?page_id=40#comment-11752</guid>
+		<description><![CDATA[Bei mir funktioniert auch nur die index.xhtml. Bei der index.jsf kommt ein Fehler, dass die Datei nicht gefunden wird.
+
+Nutze Eclipse und hab alles so wie im Buch beschrieben gemacht. (2. Auflage)]]></description>
+		<content:encoded><![CDATA[<p>Bei mir funktioniert auch nur die index.xhtml. Bei der index.jsf kommt ein Fehler, dass die Datei nicht gefunden wird.</p>
+<p>Nutze Eclipse und hab alles so wie im Buch beschrieben gemacht. (2. Auflage)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: FS</title>
+		<link>http://javaee7.de/faq/#comment-11296</link>
+		<dc:creator><![CDATA[FS]]></dc:creator>
+		<pubDate>Wed, 13 Jan 2016 13:44:38 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?page_id=40#comment-11296</guid>
+		<description><![CDATA[Ich bin ebenfalls an dieser Stelle hängen geblieben und nach Änderungen in der standalone.xml gemäß Buch hat sich der JBOSS Server nicht mehr starten lassen.
+
+Nach Änderungen gemäß folgenden Link konnte der Server wieder gestartet werden und https war funktionsfähig:
+http://reallifejava.com/configuring-ssl-in-wildfly-8/]]></description>
+		<content:encoded><![CDATA[<p>Ich bin ebenfalls an dieser Stelle hängen geblieben und nach Änderungen in der standalone.xml gemäß Buch hat sich der JBOSS Server nicht mehr starten lassen.</p>
+<p>Nach Änderungen gemäß folgenden Link konnte der Server wieder gestartet werden und https war funktionsfähig:<br />
+<a href="http://reallifejava.com/configuring-ssl-in-wildfly-8/" rel="nofollow">http://reallifejava.com/configuring-ssl-in-wildfly-8/</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jan Tack</title>
+		<link>http://javaee7.de/faq/#comment-11120</link>
+		<dc:creator><![CDATA[Jan Tack]]></dc:creator>
+		<pubDate>Sun, 20 Dec 2015 07:45:57 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?page_id=40#comment-11120</guid>
+		<description><![CDATA[Korrektur: Dort wo Trunk steht, war Branch geweint, Sorry]]></description>
+		<content:encoded><![CDATA[<p>Korrektur: Dort wo Trunk steht, war Branch geweint, Sorry</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jan Tack</title>
+		<link>http://javaee7.de/faq/#comment-11119</link>
+		<dc:creator><![CDATA[Jan Tack]]></dc:creator>
+		<pubDate>Sun, 20 Dec 2015 07:36:09 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?page_id=40#comment-11119</guid>
+		<description><![CDATA[Funktioniert bei jemandem der Test aus Abschnitt 8.2.8 (2. Auflage des Buches, Seite 264f)? 
+
+Weil bei mir die Tests immer wieder scheiterten, habe ich mir den JPA- und den EJB-Trunk aus dem Git-Hub gezogen und in beiden den Testbrowser jeweils von &quot;firefox&quot; auf &quot;phantomjs&quot; umgestellt. 
+
+Beim JPA-Trunk, der den Zustand nach Kapitel 7 wiederspiegelt laufen die Tests fehlerfrei. Anders beim EJB-Trunk, der dem Stand nach Kapitel 8 entspricht. Hier enden die Tests mit einer &quot;NoSuchElementException&quot;. 
+
+Die Details in der Fehlermeldung deuten darauf hin, das etwas mit dem Login-Vorgang nicht stimmt: 
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.841 sec &#060;&#060;&#060; FAILURE! - in de.dpunkt.myaktion.test.DonateMoneyITCase
+testDonateMoney(de.dpunkt.myaktion.test.DonateMoneyITCase)  Time elapsed: 3.444 sec  &#060;&#060;&#060; ERROR!
+org.openqa.selenium.NoSuchElementException: {&#034;errorMessage&#034;:&#034;Unable to find element with xpath &#039;//button/span[text()=&#039;Aktion hinzufügen&#039;]&#039;&#034;,&#034;request&#034;:{&#034;headers&#034;:{&#034;Accept&#034;:&#034;application/json, image/png&#034;,&#034;Connection&#034;:&#034;Keep-Alive&#034;,&#034;Content-Length&#034;:&#034;70&#034;,&#034;Content-Type&#034;:&#034;application/json; charset=utf-8&#034;,&#034;Host&#034;:&#034;localhost:5418&#034;},&#034;httpVersion&#034;:&#034;1.1&#034;,&#034;method&#034;:&#034;POST&#034;,&#034;post&#034;:&#034;{\&#034;using\&#034;:\&#034;xpath\&#034;,\&#034;value\&#034;:\&#034;//button/span[text()=&#039;Aktion hinzufügen&#039;]\&#034;}&#034;,&#034;url&#034;:&#034;/element&#034;,&#034;urlParsed&#034;:{&#034;anchor&#034;:&#034;&#034;,&#034;query&#034;:&#034;&#034;,&#034;file&#034;:&#034;element&#034;,&#034;directory&#034;:&#034;/&#034;,&#034;path&#034;:&#034;/element&#034;,&#034;relative&#034;:&#034;/element&#034;,&#034;port&#034;:&#034;&#034;,&#034;host&#034;:&#034;&#034;,&#034;password&#034;:&#034;&#034;,&#034;user&#034;:&#034;&#034;,&#034;userInfo&#034;:&#034;&#034;,&#034;authority&#034;:&#034;&#034;,&#034;protocol&#034;:&#034;&#034;,&#034;source&#034;:&#034;/element&#034;,&#034;queryKey&#034;:{},&#034;chunks&#034;:[&#034;element&#034;]},&#034;urlOriginal&#034;:&#034;/session/ecca7470-a6e9-11e5-b86f-d93f15376398/element&#034;}}
+  
+Ein kurze Rückmeldung, ob andere das gleiche Problem haben wäre schon hilfreich. Danke!]]></description>
+		<content:encoded><![CDATA[<p>Funktioniert bei jemandem der Test aus Abschnitt 8.2.8 (2. Auflage des Buches, Seite 264f)? </p>
+<p>Weil bei mir die Tests immer wieder scheiterten, habe ich mir den JPA- und den EJB-Trunk aus dem Git-Hub gezogen und in beiden den Testbrowser jeweils von &#8220;firefox&#8221; auf &#8220;phantomjs&#8221; umgestellt. </p>
+<p>Beim JPA-Trunk, der den Zustand nach Kapitel 7 wiederspiegelt laufen die Tests fehlerfrei. Anders beim EJB-Trunk, der dem Stand nach Kapitel 8 entspricht. Hier enden die Tests mit einer &#8220;NoSuchElementException&#8221;. </p>
+<p>Die Details in der Fehlermeldung deuten darauf hin, das etwas mit dem Login-Vorgang nicht stimmt: </p>
+<p>Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.841 sec &lt;&lt;&lt; FAILURE! &#8211; in de.dpunkt.myaktion.test.DonateMoneyITCase<br />
+testDonateMoney(de.dpunkt.myaktion.test.DonateMoneyITCase)  Time elapsed: 3.444 sec  &lt;&lt;&lt; ERROR!<br />
+org.openqa.selenium.NoSuchElementException: {&quot;errorMessage&quot;:&quot;Unable to find element with xpath &#039;//button/span[text()=&#039;Aktion hinzufügen&#039;]&#039;&quot;,&quot;request&quot;:{&quot;headers&quot;:{&quot;Accept&quot;:&quot;application/json, image/png&quot;,&quot;Connection&quot;:&quot;Keep-Alive&quot;,&quot;Content-Length&quot;:&quot;70&quot;,&quot;Content-Type&quot;:&quot;application/json; charset=utf-8&quot;,&quot;Host&quot;:&quot;localhost:5418&quot;},&quot;httpVersion&quot;:&quot;1.1&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;post&quot;:&quot;{\&quot;using\&quot;:\&quot;xpath\&quot;,\&quot;value\&quot;:\&quot;//button/span[text()=&#039;Aktion hinzufügen&#039;]\&quot;}&quot;,&quot;url&quot;:&quot;/element&quot;,&quot;urlParsed&quot;:{&quot;anchor&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;file&quot;:&quot;element&quot;,&quot;directory&quot;:&quot;/&quot;,&quot;path&quot;:&quot;/element&quot;,&quot;relative&quot;:&quot;/element&quot;,&quot;port&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quot;,&quot;userInfo&quot;:&quot;&quot;,&quot;authority&quot;:&quot;&quot;,&quot;protocol&quot;:&quot;&quot;,&quot;source&quot;:&quot;/element&quot;,&quot;queryKey&quot;:{},&quot;chunks&quot;:[&quot;element&quot;]},&quot;urlOriginal&quot;:&quot;/session/ecca7470-a6e9-11e5-b86f-d93f15376398/element&quot;}}</p>
+<p>Ein kurze Rückmeldung, ob andere das gleiche Problem haben wäre schon hilfreich. Danke!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Volker</title>
+		<link>http://javaee7.de/faq/#comment-10872</link>
+		<dc:creator><![CDATA[Volker]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2015 14:51:23 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?page_id=40#comment-10872</guid>
+		<description><![CDATA[Hallo,
+leider laufen die Arquillian Test nicht. Ich bekomme diese Exception.
+Pom ist wie im Buch angepasst.
+
+Nov 19, 2015 3:41:17 PM org.jboss.arquillian.drone.webdriver.factory.remote.reusable.ReusedSessionPermanentFileStorage readStore
+INFORMATION: Reused session store is not available at C:\Users\dfo\.drone-webdriver-session-store, a new one will be created.
+
+Grüße
+Volker]]></description>
+		<content:encoded><![CDATA[<p>Hallo,<br />
+leider laufen die Arquillian Test nicht. Ich bekomme diese Exception.<br />
+Pom ist wie im Buch angepasst.</p>
+<p>Nov 19, 2015 3:41:17 PM org.jboss.arquillian.drone.webdriver.factory.remote.reusable.ReusedSessionPermanentFileStorage readStore<br />
+INFORMATION: Reused session store is not available at C:\Users\dfo\.drone-webdriver-session-store, a new one will be created.</p>
+<p>Grüße<br />
+Volker</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Thomas Hermann</title>
+		<link>http://javaee7.de/faq/#comment-10718</link>
+		<dc:creator><![CDATA[Thomas Hermann]]></dc:creator>
+		<pubDate>Thu, 01 Oct 2015 12:20:43 +0000</pubDate>
+		<guid isPermaLink="false">http://www.javaee7.de/?page_id=40#comment-10718</guid>
+		<description><![CDATA[Hallo,
+ich versuche anstatt der JBoss DB eine Oracle Datenbank zu benutzen. Ich möchte den Oracle ojdbc benutzen. Ich bekomme einfach keine persistance.xml hin die funktioniert. Was muß man da beachten?]]></description>
+		<content:encoded><![CDATA[<p>Hallo,<br />
+ich versuche anstatt der JBoss DB eine Oracle Datenbank zu benutzen. Ich möchte den Oracle ojdbc benutzen. Ich bekomme einfach keine persistance.xml hin die funktioniert. Was muß man da beachten?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>
